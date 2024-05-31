@@ -1,6 +1,19 @@
 // a 태그 성격 제거
 $('a[href="#"]').on('click', e => e.preventDefault());
 
+// 메뉴 버튼
+$('.gnb-button').on('click', (e) => {
+  $(e.target).toggleClass('toggle-btn');
+  $('.gnb-menu').toggleClass('show-menu');
+
+  $('.gnb-menu li').each( (index, li) => {
+    $(li).on('click', () => {
+      $('.gnb-button').removeClass('toggle-btn');
+      $('.gnb-menu').removeClass('show-menu');
+    });
+  });
+});
+
 // 옆으로 흐르는 텍스트
 let $text = $('.move-text-box .move-text'); // 애니메이션 대상 지정
 let $wrap = $('.move-text-box'); // 애니메이션 영역 선택

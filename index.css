@@ -7,7 +7,7 @@ body {
 }
 
 /***** header *****/
-header .gnb {
+header .gnb-menu {
   display: none;
 }
 
