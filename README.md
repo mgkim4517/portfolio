@@ -1,3 +1,8 @@
+## 240531
+* index.css 스타일 작업
+* common.js 작업
+* ~~~ 플러그인 공부
+
 ## 240530
 * index.css 스타일 작업
 * common.css 작성

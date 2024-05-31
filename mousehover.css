@@ -1,0 +1,23 @@
+
+
+.rise-box:hover{
+  cursor: none;
+}
+
+main .project-container .rise-box .ball {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: #4f5885;
+  border-radius: 50%;
+  color: #fff;
+  /* will-change: transform; */
+  pointer-events: none;
+  font-size: 12px;
+  opacity: .9;
+}

@@ -2,6 +2,8 @@
 body {
   background-color: var(--bg-color-ivory);
   font-family: var(--primary-font-en1);
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 /***** header *****/
@@ -10,10 +12,6 @@ header .gnb {
 }
 
 /***** main *****/
-main {
-  /* padding: 0 62px; */
-}
-
 /*** main-container ***/
 main .main-container {
   position: relative;
@@ -23,37 +21,43 @@ main .main-container {
 
 main .main-container .main-top {
   position: absolute;
-  top: 70px; right: 62px;
+  top: 70px;
+  right: 62px;
 }
 
 main .main-container .main-center {
   position: absolute;
-  top: 45%; left: 50%;
+  top: 45%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: -9999;
 }
 
 main .main-container .main-bottom {
   position: absolute;
-  bottom: 70px; left: 62px;
+  bottom: 70px;
+  left: 62px;
 }
 
 main .main-container .main-desc {
   display: grid;
   place-content: center;
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 main .main-container .main-desc .first-desc {
   font-size: var(--title-size-ssx);
   color: var(--list-color1);
   font-weight: 900;
+  line-height: 0.8;
 }
 
 main .main-container .main-desc .second-desc {
   font-size: var(--title-size-ssx);
   color: var(--list-color2);
   font-weight: 900;
+  line-height: 0.8;
 }
 
 main .main-container .main-desc .third-desc {
@@ -61,18 +65,18 @@ main .main-container .main-desc .third-desc {
   color: var(--list-color3);
   font-weight: 900;
   justify-self: end;
+  line-height: 0.8;
 }
 
 /*** about-container ***/
 main .about-container {
-  /* background-color: #ffd8d8; */
   width: 100%;
   height: 100vh;
-  /* padding: 100px 0; */
 }
 
 main .about-container .about-box {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   place-items: center;
@@ -97,38 +101,91 @@ main .about-container .about-box .test {
 main .about-container .about-box .test .me-text {
   padding-right: 400px;
   padding-bottom: 100px;
-  white-space: nowrap;
 }
 
 main .about-container .about-box .test .intro-box {
   padding-right: 100px;
   text-align: right;
-  white-space: nowrap;
   padding-bottom: 100px;
+}
+
+main .about-container .about-box .test .intro-box h3 {
+  font-family: var(--primary-font-ko);
+  font-size: var(--desc-size-sm);
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+main .about-container .about-box .test .intro-box h3 span {
+  font-family: var(--primary-font-ko);
+  font-weight: 500;
+  font-size: 25px;
+  background-color: var(--list-color3);
+  color: var(--list-color5);
+}
+
+main .about-container .about-box .test .intro-box p {
+  font-family: var(--primary-font-ko);
+  font-weight: 400;
+  font-size: var(--desc-size-sx);
+  padding-bottom: 10px;
 }
 
 main .about-container .about-box .test .intro-box .intro-tag-box {
   display: flex;
   justify-content: flex-end;
+  padding-top: 18px;
 }
 
-/* slide-text */
-main .slide-text {
+main .about-container .about-box .test .intro-box .intro-tag-box li a {
+  font-family: var(--primary-font-ko);
+  color: var(--list-color3);
+  font-size: var(--desc-size-sx);
+  font-weight: 600;
+  border: 3px solid var(--list-color3);
+  border-radius: var(--primary-radius);
+  padding: 8px 22px;
+  margin-left: 20px;
+  display: block;
+  cursor: context-menu;
 }
 
-main .slide-text h2 {
-  background-color: var(--list-color6);
-  color: var(--list-color5);
+main .about-container .about-box .test .intro-box .intro-tag-box li a:hover {
+  background-color: var(--list-color4);
+  color: var(--list-color1);
+  border-color: var(--list-color1);
+}
+
+/* move-text-container */
+.move-text-container{
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  height: 80px;
+  line-height: 80px;
+}
+
+.move-text-box{
+  position: absolute;
+  right: 0;
+  display: flex;
+  width: 100%;
+}
+
+.move-text{
+  display: inline-block;
   font-size: var(--desc-size-md);
-  padding: 21px 0;
-  margin-top: 50px;
+  font-weight: 900;
+  color: var(--list-color5);
+  /* -webkit-text-stroke: 5px #fff; */
+  white-space: nowrap;
 }
 
 /*** skill-container ***/
 main .skill-container {
-  width: 100%; height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
-
 
 main .skill-container .skill-box {
   display: grid;
@@ -136,7 +193,9 @@ main .skill-container .skill-box {
   grid-template-rows: 346px 346px;
   gap: 30px;
   place-content: center;
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 0 172px;
 }
 
 main .skill-container .skill-box li {
@@ -160,6 +219,165 @@ main .skill-container .skill-box li p {
   padding-top: 15px;
   font-family: var(--primary-font-ko);
   font-size: var(--desc-size-sx);
+}
+
+/*** project-container ***/
+main .project-container:hover {
+  cursor: none;
+}
+
+main .project-container .ball {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: var(--list-color3);
+  color: #fff;
+  font-size: var(--desc-size-sx);
+  font-weight: 600;
+  text-transform: uppercase;
+  pointer-events: none;
+  opacity: .8;
+}
+
+/* rise-box  */
+main .project-container .rise-box {
+  width: 100%;
+  height: 100vh;
+  /* background-color: #ddd; */
+  position: relative;
+}
+
+main .project-container .rise-box h2 {
+  font-size: var(--title-size-xxl);
+  font-weight: 900;
+  line-height: 0.7;
+  padding-top: 211px;
+}
+
+main .project-container .rise-box h3 {
+  font-size: var(--title-size-sx);
+  font-weight: 900;
+  line-height: 0.7;
+  padding-top: 92px;
+}
+
+main .project-container .rise-box .rise-text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+main .project-container .rise-box .rise-text-box h3 {
+  padding-top: 33px;
+}
+
+main .project-container .rise-box .rise-text-box p {
+  font-family: var(--primary-font-ko);
+  font-weight: 500;
+  text-align: right;
+  line-height: 1.4;
+  padding-right: 20px;
+}
+
+main .project-container .rise-box img {
+  position: absolute;
+  top: 121px;
+  left: 810px;
+}
+
+/* everparking-box */
+main .project-container .everparking-box {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+main .project-container .everparking-box h2 {
+  font-size: var(--title-size-lg);
+  font-weight: 900;
+  line-height: 0.7;
+  text-align: right;
+  padding-top: 307px;
+}
+
+main .project-container .everparking-box .everparking-text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+main .project-container .everparking-box .everparking-text-box h2 {
+  font-size: var(--title-size-lg);
+  font-weight: 900;
+  line-height: 0.7;
+  padding-top: 94px;
+}
+
+main .project-container .everparking-box .everparking-text-box p {
+  font-family: var(--primary-font-ko);
+  font-weight: 500;
+  line-height: 1.4;
+  padding-left: 20px;
+}
+
+main .project-container .everparking-box img {
+  position: absolute;
+  top: 40px;
+  left: 260px;
+}
+
+/* vivienne-box */
+main .vivienne-box {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+main .vivienne-box h2 {
+  font-size: var(--title-size-xl);
+  font-weight: 900;
+  line-height: 0.7;
+  padding-top: 159px;
+}
+
+main .vivienne-box .vivienne-text-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+main .vivienne-box .vivienne-text-box h2 {
+  font-size: var(--title-size-xl);
+  font-weight: 900;
+  line-height: 0.7;
+  padding-top: 42px;
+}
+
+main .vivienne-box .vivienne-text-box p {
+  font-family: var(--primary-font-ko);
+  font-weight: 500;
+  text-align: right;
+  line-height: 1.4;
+  padding-right: 20px;
+}
+
+main .vivienne-box h3 {
+  font-size: var(--title-size-sm);
+  font-weight: 900;
+  line-height: 0.7;
+  padding-top: 29px;
+}
+
+main .vivienne-box img {
+  position: absolute;
+  top: 36px;
+  left: 800px;
 }
 
 /***** footer *****/

@@ -32,7 +32,7 @@
   --desc-size-md: 40px;
   --desc-size-sm: 24px;
   --desc-size-sx: 20px;
-  --desc-size-sxx: 16px;
+  --desc-size-sxx: 18px;
 
   /* color */
   --bg-color-ivory: #FFFDF5;
@@ -48,24 +48,24 @@
   --primary-radius: 100px;
 
   /* 드래그 */
-  ::selection {
-    /* background-color: #ddd;
-    color: #fff; */
-  }
+::selection {
+  background-color: #d1b3b3;
+  color: #fff;
+}
 
   /* 스크롤바 */
-  /* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--color-primary);
+  background-color: var(--list-color6);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-gray-20);
-  box-shadow: 0 1px 10px var(--color-gray-80)
-} */
+  background-color: var(--list-color3);
+  box-shadow: 0 1px 10px var(--list-color4);
+}
 
   /***** header *****/
   /* menu */
@@ -109,7 +109,8 @@
 
   /***** footer *****/
   footer {
-    padding: 0 33px;
+    /* padding: 0 33px; */
+    padding: 200px 33px 0 33px;
   }
 
   footer .contact-container {
