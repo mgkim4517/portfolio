@@ -1,0 +1,161 @@
+@charset "utf-8";
+/*** 폰트 설정 ***/
+/* 'Pretendard', sans-serif */
+@import url(./pretendard-subset.css);
+
+/* "Montserrat", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 'CWDangamAsac-Bold', sans-serif */
+@font-face {
+  font-family: 'CWDangamAsac-Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*** 변수 설정 ***/
+:root {
+  /* fonts */
+  --primary-font-en1: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --primary-font-en2: 'CWDangamAsac-Bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --primary-font-ko: 'Pretendard', -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+
+  --title-size-xxl: 380px;
+  --title-size-xl: 350px;
+  --title-size-lg: 330px;
+  --title-size-md: 250px;
+  --title-size-sm: 200px;
+  --title-size-sx: 180px;
+  --title-size-ssx: 120px;
+
+  --desc-size-md: 40px;
+  --desc-size-sm: 24px;
+  --desc-size-sx: 20px;
+  --desc-size-sxx: 16px;
+
+  /* color */
+  --bg-color-ivory: #FFFDF5;
+
+  --list-color1: #192551;
+  --list-color2: #37436A;
+  --list-color3: #47537D;
+  --list-color4: #F3EBDF;
+  --list-color5: #fff;
+  --list-color6: #000;
+
+  /* 기타 */
+  --primary-radius: 100px;
+
+  /* 드래그 */
+  ::selection {
+    /* background-color: #ddd;
+    color: #fff; */
+  }
+
+  /* 스크롤바 */
+  /* ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-gray-20);
+  box-shadow: 0 1px 10px var(--color-gray-80)
+} */
+
+  /***** header *****/
+  /* menu */
+  header .gnb-btn {}
+
+  header .gnb {
+    background-color: var(--list-color6);
+    color: var(--list-color5);
+    width: 650px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 48px;
+    font-family: var(--primary-font-en1);
+    font-weight: 500;
+    padding-top: 120px;
+  }
+
+  header .gnb li {
+    padding: 40px 0 0 100px;
+  }
+
+  header .gnb .gnb-desc {
+    font-size: var(--desc-size-sx);
+    color: var(--list-color5);
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
+    text-align: right;
+  }
+
+  header .gnb .gnb-desc p {
+    padding-top: 7px;
+  }
+
+  /* 공통 */
+  .flex-wrapper {
+    padding: 0 62px;
+  }
+
+  /***** footer *****/
+  footer {
+    padding: 0 33px;
+  }
+
+  footer .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--list-color6);
+    border-bottom: 2px solid var(--list-color6);
+    padding: 20px 40px;
+  }
+
+  footer .contact-container h2 {
+    font-size: 96px;
+    font-family: var(--primary-font-en1);
+    color: var(--list-color6);
+    font-weight: 800;
+  }
+
+  footer .contact-container h3 {
+    font-size: 64px;
+    font-weight: 600;
+  }
+
+  /* 깃허브 이동 버튼 */
+  footer .btn-box {
+    padding: 50px 0 50px 0;
+    position: absolute;
+    right: 33px;
+  }
+
+  footer .btn-box a {
+    font-family: var(--primary-font-ko);
+    border: 2px solid #000;
+    padding: 15px 30px;
+    font-size: var(--desc-size-sm);
+    color: var(--list-color6);
+    margin-left: 40px;
+  }
+
+  footer .btn-box a img {
+    width: 60px;
+    padding-right: 25px;
+  }
+
+  footer .btn-box a:hover {
+    background-color: var(--list-color4);
+    color: var(--list-color6);
+  }
+}

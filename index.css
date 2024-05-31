@@ -1,0 +1,165 @@
+@charset "utf-8";
+body {
+  background-color: var(--bg-color-ivory);
+  font-family: var(--primary-font-en1);
+}
+
+/***** header *****/
+header .gnb {
+  display: none;
+}
+
+/***** main *****/
+main {
+  /* padding: 0 62px; */
+}
+
+/*** main-container ***/
+main .main-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+main .main-container .main-top {
+  position: absolute;
+  top: 70px; right: 62px;
+}
+
+main .main-container .main-center {
+  position: absolute;
+  top: 45%; left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -9999;
+}
+
+main .main-container .main-bottom {
+  position: absolute;
+  bottom: 70px; left: 62px;
+}
+
+main .main-container .main-desc {
+  display: grid;
+  place-content: center;
+  width: 100%; height: 100%;
+}
+
+main .main-container .main-desc .first-desc {
+  font-size: var(--title-size-ssx);
+  color: var(--list-color1);
+  font-weight: 900;
+}
+
+main .main-container .main-desc .second-desc {
+  font-size: var(--title-size-ssx);
+  color: var(--list-color2);
+  font-weight: 900;
+}
+
+main .main-container .main-desc .third-desc {
+  font-size: var(--title-size-ssx);
+  color: var(--list-color3);
+  font-weight: 900;
+  justify-self: end;
+}
+
+/*** about-container ***/
+main .about-container {
+  /* background-color: #ffd8d8; */
+  width: 100%;
+  height: 100vh;
+  /* padding: 100px 0; */
+}
+
+main .about-container .about-box {
+  width: 100%; height: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  place-items: center;
+}
+
+main .about-container .about-box h2 {
+  font-family: var(--primary-font-en2);
+  color: var(--list-color3);
+  font-size: var(--title-size-md);
+}
+
+main .about-container .about-box .about-text {
+  padding-top: 100px;
+}
+
+main .about-container .about-box .test {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .about-container .about-box .test .me-text {
+  padding-right: 400px;
+  padding-bottom: 100px;
+  white-space: nowrap;
+}
+
+main .about-container .about-box .test .intro-box {
+  padding-right: 100px;
+  text-align: right;
+  white-space: nowrap;
+  padding-bottom: 100px;
+}
+
+main .about-container .about-box .test .intro-box .intro-tag-box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* slide-text */
+main .slide-text {
+}
+
+main .slide-text h2 {
+  background-color: var(--list-color6);
+  color: var(--list-color5);
+  font-size: var(--desc-size-md);
+  padding: 21px 0;
+  margin-top: 50px;
+}
+
+/*** skill-container ***/
+main .skill-container {
+  width: 100%; height: 100vh;
+}
+
+
+main .skill-container .skill-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 346px 346px;
+  gap: 30px;
+  place-content: center;
+  width: 100%; height: 100%;
+}
+
+main .skill-container .skill-box li {
+  background-color: var(--list-color4);
+  border-radius: 20px;
+  padding: 50px 39px;
+}
+
+main .skill-container .skill-box li:nth-of-type(1),
+main .skill-container .skill-box li:nth-of-type(3) {
+  text-align: right;
+}
+
+main .skill-container .skill-box li h3 {
+  font-size: var(--desc-size-md);
+  color: var(--list-color1);
+  padding-bottom: 57px;
+}
+
+main .skill-container .skill-box li p {
+  padding-top: 15px;
+  font-family: var(--primary-font-ko);
+  font-size: var(--desc-size-sx);
+}
+
+/***** footer *****/
