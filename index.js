@@ -1,3 +1,6 @@
+// a 태그 성격 제거
+$('a[href="#"]').on('click', e => e.preventDefault());
+
 // 옆으로 흐르는 텍스트
 let $text = $('.move-text-box .move-text'); // 애니메이션 대상 지정
 let $wrap = $('.move-text-box'); // 애니메이션 영역 선택
