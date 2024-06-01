@@ -120,6 +120,7 @@ main .about-container .about-wrapper .about-box .intro-box h3 span {
   font-size: 25px;
   background-color: var(--list-color3);
   color: var(--list-color5);
+  padding: 0 3px;
 }
 
 main .about-container .about-wrapper .about-box .intro-box p {
@@ -148,9 +149,8 @@ main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a {
 }
 
 main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a:hover {
-  background-color: var(--list-color4);
-  color: var(--list-color1);
-  border-color: var(--list-color1);
+  background-color: var(--list-color3);
+  color: var(--list-color4);
 }
 
 /* move-text-container */
