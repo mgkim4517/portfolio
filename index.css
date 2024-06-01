@@ -40,7 +40,6 @@ main .main-container .main-bottom {
 }
 
 main .main-container .main-desc {
-  display: grid;
   place-content: center;
   width: 100%;
   height: 100%;
@@ -74,7 +73,7 @@ main .about-container {
   height: 100vh;
 }
 
-main .about-container .about-box {
+main .about-container .about-wrapper {
   width: 100%;
   height: 100%;
   display: grid;
@@ -82,41 +81,40 @@ main .about-container .about-box {
   place-items: center;
 }
 
-main .about-container .about-box h2 {
+main .about-container .about-wrapper h2 {
   font-family: var(--primary-font-en2);
   color: var(--list-color3);
   font-size: var(--title-size-md);
 }
 
-main .about-container .about-box .about-text {
+main .about-container .about-wrapper .about-text {
   padding-top: 100px;
 }
 
-main .about-container .about-box .test {
-  display: flex;
+main .about-container .about-wrapper .about-box {
   justify-content: space-between;
   align-items: center;
 }
 
-main .about-container .about-box .test .me-text {
+main .about-container .about-wrapper .about-box .me-text {
   padding-right: 400px;
   padding-bottom: 100px;
 }
 
-main .about-container .about-box .test .intro-box {
+main .about-container .about-wrapper .about-box .intro-box {
   padding-right: 100px;
   text-align: right;
   padding-bottom: 100px;
 }
 
-main .about-container .about-box .test .intro-box h3 {
+main .about-container .about-wrapper .about-box .intro-box h3 {
   font-family: var(--primary-font-ko);
   font-size: var(--desc-size-sm);
   font-weight: 400;
   padding-bottom: 10px;
 }
 
-main .about-container .about-box .test .intro-box h3 span {
+main .about-container .about-wrapper .about-box .intro-box h3 span {
   font-family: var(--primary-font-ko);
   font-weight: 500;
   font-size: 25px;
@@ -124,20 +122,19 @@ main .about-container .about-box .test .intro-box h3 span {
   color: var(--list-color5);
 }
 
-main .about-container .about-box .test .intro-box p {
+main .about-container .about-wrapper .about-box .intro-box p {
   font-family: var(--primary-font-ko);
   font-weight: 400;
   font-size: var(--desc-size-sx);
   padding-bottom: 10px;
 }
 
-main .about-container .about-box .test .intro-box .intro-tag-box {
-  display: flex;
+main .about-container .about-wrapper .about-box .intro-box .intro-tag-box {
   justify-content: flex-end;
   padding-top: 18px;
 }
 
-main .about-container .about-box .test .intro-box .intro-tag-box li a {
+main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a {
   font-family: var(--primary-font-ko);
   color: var(--list-color3);
   font-size: var(--desc-size-sx);
@@ -150,14 +147,14 @@ main .about-container .about-box .test .intro-box .intro-tag-box li a {
   cursor: context-menu;
 }
 
-main .about-container .about-box .test .intro-box .intro-tag-box li a:hover {
+main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a:hover {
   background-color: var(--list-color4);
   color: var(--list-color1);
   border-color: var(--list-color1);
 }
 
 /* move-text-container */
-.move-text-container{
+.move-text-container {
   position: relative;
   overflow: hidden;
   background: #000;
@@ -165,14 +162,13 @@ main .about-container .about-box .test .intro-box .intro-tag-box li a:hover {
   line-height: 80px;
 }
 
-.move-text-box{
+.move-text-container .move-text-box {
   position: absolute;
   right: 0;
-  display: flex;
   width: 100%;
 }
 
-.move-text{
+.move-text-container .move-text-box .move-text {
   display: inline-block;
   font-size: var(--desc-size-md);
   font-weight: 900;
@@ -188,7 +184,6 @@ main .skill-container {
 }
 
 main .skill-container .skill-box {
-  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 346px 346px;
   gap: 30px;
@@ -230,7 +225,6 @@ main .project-container .ball {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  display: grid;
   place-items: center;
   position: fixed;
   top: 0;
@@ -243,6 +237,18 @@ main .project-container .ball {
   text-transform: uppercase;
   pointer-events: none;
   opacity: .8;
+}
+
+/*** project-box ***/
+main .project-container .project-box .title {
+  opacity: 0;
+  transform: translateY(500px);
+  transition: all 1.2s ease;
+}
+
+main .project-container .project-box.show .title {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* rise-box  */
@@ -268,7 +274,6 @@ main .project-container .rise-box h3 {
 }
 
 main .project-container .rise-box .rise-text-box {
-  display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -279,7 +284,7 @@ main .project-container .rise-box .rise-text-box h3 {
 
 main .project-container .rise-box .rise-text-box p {
   font-family: var(--primary-font-ko);
-  font-weight: 500;
+  font-weight: 400;
   text-align: right;
   line-height: 1.4;
   padding-right: 20px;
@@ -307,7 +312,6 @@ main .project-container .everparking-box h2 {
 }
 
 main .project-container .everparking-box .everparking-text-box {
-  display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -321,9 +325,10 @@ main .project-container .everparking-box .everparking-text-box h2 {
 
 main .project-container .everparking-box .everparking-text-box p {
   font-family: var(--primary-font-ko);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.4;
   padding-left: 20px;
+  text-align: right;
 }
 
 main .project-container .everparking-box img {
@@ -347,7 +352,6 @@ main .vivienne-box h2 {
 }
 
 main .vivienne-box .vivienne-text-box {
-  display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
@@ -361,8 +365,8 @@ main .vivienne-box .vivienne-text-box h2 {
 
 main .vivienne-box .vivienne-text-box p {
   font-family: var(--primary-font-ko);
-  font-weight: 500;
-  text-align: right;
+  font-weight: 400;
+  text-align: left;
   line-height: 1.4;
   padding-right: 20px;
 }
@@ -379,5 +383,3 @@ main .vivienne-box img {
   top: 36px;
   left: 800px;
 }
-
-/***** footer *****/

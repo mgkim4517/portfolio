@@ -48,24 +48,41 @@
   --primary-radius: 100px;
 
   /* 드래그 */
-::selection {
-  background-color: #d1b3b3;
-  color: #fff;
-}
+  ::selection {
+    background-color: #d1b3b3;
+    color: #fff;
+  }
 
   /* 스크롤바 */
-::-webkit-scrollbar {
-  width: 10px;
-}
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
 
-::-webkit-scrollbar-track {
-  background-color: #d1b3b3;
-}
+  ::-webkit-scrollbar-track {
+    background-color: #d1b3b3;
+  }
 
-::-webkit-scrollbar-thumb {
-  background-color: var(--list-color2)
-  /* box-shadow: 0 1px 10px var(--list-color4); */
-}
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--list-color2)
+      /* box-shadow: 0 1px 10px var(--list-color4); */
+  }
+
+  /* 공통 */
+  .side-padding {
+    padding: 0 62px;
+  }
+
+  .flex-wrapper {
+    display: flex;
+  }
+
+  .grid-wrapper {
+    display: grid;
+  }
+
+  .block-wrapper {
+    display: block;
+  }
 
   /***** header *****/
   /* menu */
@@ -75,9 +92,9 @@
   }
 
   header .gnb-container {
-    display: flex;
     position: fixed;
-    top: 5%; right: 50px;
+    top: 5%;
+    right: 50px;
     z-index: 9999;
   }
 
@@ -94,27 +111,27 @@
   header .gnb-container .gnb-button:hover {
     background-color: var(--list-color2);
   }
-  
+
   header .gnb-container .gnb-button span {
     display: block;
     width: 50px;
     height: 4px;
     background-color: var(--list-color4)
   }
-  
+
   header .gnb-container .gnb-button .bar2 {
     width: 50px;
     margin: 12px 0;
   }
-  
+
   header .gnb-container .gnb-button.toggle-btn .bar1 {
     transform: translateY(15px) rotate(45deg);
   }
-  
+
   header .gnb-container .gnb-button.toggle-btn .bar2 {
     transform: scale(0);
   }
-  
+
   header .gnb-container .gnb-button.toggle-btn .bar3 {
     transform: translateY(-15px) rotate(-45deg);
   }
@@ -154,11 +171,6 @@
     padding-top: 7px;
   }
 
-  /* 공통 */
-  .flex-wrapper {
-    padding: 0 62px;
-  }
-
   /***** footer *****/
   footer {
     /* padding: 0 33px; */
@@ -194,15 +206,10 @@
   }
 
   footer .btn-box a {
-    font-family: var(--primary-font-ko);
-    border: 2px solid #000;
-    padding: 15px 30px;
-    font-size: var(--desc-size-sm);
-    color: var(--list-color6);
-    margin-left: 40px;
+    margin-left: 50px;
   }
 
-  footer .btn-box a img {
+  /* footer .btn-box a img {
     width: 60px;
     padding-right: 25px;
   }
@@ -210,5 +217,78 @@
   footer .btn-box a:hover {
     background-color: var(--list-color4);
     color: var(--list-color6);
+  } */
+  footer .btn-box .button {
+    width: 300px;
+    height: 60px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+  }
+
+  footer .btn-box .block-btn {
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+    box-shadow: none;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    /* -webkit-perspective: 300px;
+    perspective: 300px; */
+  }
+
+  footer .btn-box .block-btn p {
+    background: linear-gradient(0deg, #192551 5%, #47537D 100%);
+    display: block;
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+
+  footer .btn-box .block-btn p:nth-child(1) {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+
+  footer .btn-box .block-btn p:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+
+  footer .btn-box .block-btn:hover p:nth-child(1) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+
+  footer .btn-box .block-btn:hover p:nth-child(2) {
+    color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
   }
 }

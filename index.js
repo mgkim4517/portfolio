@@ -1,19 +1,3 @@
-// a 태그 성격 제거
-$('a[href="#"]').on('click', e => e.preventDefault());
-
-// 메뉴 버튼
-$('.gnb-button').on('click', (e) => {
-  $(e.target).toggleClass('toggle-btn');
-  $('.gnb-menu').toggleClass('show-menu');
-
-  $('.gnb-menu li').each( (index, li) => {
-    $(li).on('click', () => {
-      $('.gnb-button').removeClass('toggle-btn');
-      $('.gnb-menu').removeClass('show-menu');
-    });
-  });
-});
-
 // 옆으로 흐르는 텍스트
 let $text = $('.move-text-box .move-text'); // 애니메이션 대상 지정
 let $wrap = $('.move-text-box'); // 애니메이션 영역 선택
@@ -37,15 +21,13 @@ let speed = 0.1;
 let xSet = gsap.quickSetter(ball, "x", "px");
 let ySet = gsap.quickSetter(ball, "y", "px");
 
-
-
  window.addEventListener("mousemove", e => {    
    mouse.x = e.x;
    mouse.y = e.y;  
  });
+
  gsap.ticker.add(() => {
   let dt = 1.0 - Math.pow(1.0 - speed, gsap.ticker.deltaRatio()); 
-   
    pos.x += (mouse.x - pos.x) * dt;
    pos.y += (mouse.y - pos.y) * dt;
    xSet(pos.x);
@@ -57,7 +39,6 @@ gsap.set(ball, { scale: 0 })
 let section = document.querySelector(".project-container");
 
 section.onmouseenter = function(){
-
     gsap.to(ball, { scale: 1 })
 }
 
@@ -70,6 +51,28 @@ section.onmouseup = function() {
 }
 
 section.onmouseleave = function(){
-
     gsap.to(ball, { scale: 0 })
 }
+
+// 스크롤 시 아래에서 위로 등장하는 텍스트
+const contents = document.querySelectorAll('.project-box');
+
+appear();
+
+function appear() {
+  const triggerBottom = (window.innerHeight / 5) * 4;
+
+  if(contents){
+    contents.forEach((content) => {
+    const contentTop = content.getBoundingClientRect().top;
+
+    if (contentTop < triggerBottom) {
+      content.classList.add("show");
+    } else {
+      content.classList.remove("show");
+    }
+  });
+  }
+}
+
+window.addEventListener("scroll", appear);
