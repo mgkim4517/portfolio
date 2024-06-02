@@ -158,6 +158,10 @@
     padding: 40px 0 0 100px;
   }
 
+  header .gnb-menu li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+
   header .gnb-menu .gnb-desc {
     font-size: var(--desc-size-sx);
     color: var(--list-color5);
@@ -191,13 +195,14 @@
     font-family: var(--primary-font-en1);
     color: var(--list-color6);
     font-weight: 800;
+    text-transform: uppercase;
   }
 
   footer .contact-container h3 {
     font-size: 64px;
     font-weight: 600;
   }
-
+  
   /* 깃허브 이동 버튼 */
   footer .btn-box {
     padding: 50px 0 50px 0;
@@ -209,23 +214,13 @@
     margin-left: 50px;
   }
 
-  /* footer .btn-box a img {
-    width: 60px;
-    padding-right: 25px;
-  }
-
-  footer .btn-box a:hover {
-    background-color: var(--list-color4);
-    color: var(--list-color6);
-  } */
   footer .btn-box .button {
-    width: 300px;
-    height: 60px;
+    font-family: var(--primary-font-ko);
+    font-weight: 300;
+    font-size: var(--desc-size-sxx);
+    background: transparent;
     color: #fff;
     border-radius: 5px;
-    padding: 10px 25px;
-    font-weight: 500;
-    background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
@@ -242,21 +237,18 @@
     width: 300px;
     height: 60px;
     line-height: 60px;
-    /* -webkit-perspective: 300px;
-    perspective: 300px; */
   }
 
   footer .btn-box .block-btn p {
     background: linear-gradient(0deg, #192551 5%, #47537D 100%);
-    display: block;
-    position: absolute;
     width: 300px;
     height: 60px;
     border-radius: 5px;
     text-align: center;
+    display: block;
+    position: absolute;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;
     -webkit-transition: all .3s;
     transition: all .3s;
   }

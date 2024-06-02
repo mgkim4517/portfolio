@@ -157,7 +157,7 @@ main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a:h
 .move-text-container {
   position: relative;
   overflow: hidden;
-  background: #000;
+  background: var(--list-color2);
   height: 80px;
   line-height: 80px;
 }
@@ -172,7 +172,7 @@ main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a:h
   display: inline-block;
   font-size: var(--desc-size-md);
   font-weight: 900;
-  color: var(--list-color5);
+  color: var(--bg-color-ivory);
   /* -webkit-text-stroke: 5px #fff; */
   white-space: nowrap;
 }
@@ -197,6 +197,15 @@ main .skill-container .skill-box li {
   background-color: var(--list-color4);
   border-radius: 20px;
   padding: 50px 39px;
+}
+
+main .skill-container .skill-box li:hover {
+  background-color: var(--list-color2);
+  color: var(--list-color5);
+}
+
+main .skill-container .skill-box li:hover h3 {
+  color: var(--list-color4);
 }
 
 main .skill-container .skill-box li:nth-of-type(1),
@@ -381,5 +390,27 @@ main .vivienne-box h3 {
 main .vivienne-box img {
   position: absolute;
   top: 36px;
-  left: 800px;
+  left: 810px;
+}
+
+/***** footer *****/
+footer .contact-container h3 {
+  display: inline-block;
+  transform-origin: center;
+  color: var(--list-color6);
+  animation: animate 1.8s infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

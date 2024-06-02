@@ -76,3 +76,5 @@ function appear() {
 }
 
 window.addEventListener("scroll", appear);
+
+// main-container 텍스트 이벤트
