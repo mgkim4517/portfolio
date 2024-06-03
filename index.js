@@ -77,4 +77,15 @@ function appear() {
 
 window.addEventListener("scroll", appear);
 
-// main-container 텍스트 이벤트
+// about-container 텍스트 이벤트
+$(window).scroll(function() {
+  var aboutContainerTop = $('.about-container').offset().top;
+  var windowHeight = $(window).height();
+  var scrollTop = $(window).scrollTop();
+
+  if (scrollTop + windowHeight >= aboutContainerTop) {
+      setTimeout(function() {
+          $('.fly-in').removeClass('hidden');
+      }, 200);
+  }
+});

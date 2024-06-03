@@ -2,11 +2,13 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8" />
-    <title>index</title>
+    <title>MINGYEONG</title>
     <meta
       name="viewport"
-      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
+    />
     <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <!-- open graph -->
 
     <!-- reset -->
@@ -25,6 +27,7 @@
     <script src="./assets/TweenMax.min.js"></script>
     <script src="./assets/gsap.min.js"></script>
     <script src="./assets/ScrollToPlugin.min.js"></script>
+    <script src="./assets/jquery-2.1.1.min.js"></script>
     <!-- 공통된 js -->
     <script defer src="./assets/styles/common.js"></script>
   </head>
@@ -55,29 +58,59 @@
     <main>
       <section class="main-container" id="main">
         <img src="./assets/images/main-top.svg" alt="" class="main-top">
-        <div class="main-desc grid-wrapper">
-          <h2 class="first-desc">PUBLISHER</h2>
-          <h2 class="second-desc">& WEB DESIGNER</h2>
-          <h2 class="third-desc">PORTFOLIO</h2>
-        </div>
+        <div class="title-wrapper grid-wrapper">
+          <div class="title-box">
+              <h2 class="first-title title">PUBLISHER</h2>
+          </div>
+          <div class="title-box">
+              <h2 class="second-title title">& WEB DESIGNER</h2>
+          </div>
+          <div class="title-box grid-wrapper">
+              <h2 class="third-title title">PORTFOLIO</h2>
+          </div>
+      </div>
         <img src="./assets/images/main-center.svg" alt="" class="main-center">
         <img src="./assets/images/main-bottom.svg" alt="" class="main-bottom">
       </section>
 
       <section class="about-container" id="about">
         <div class="about-wrapper">
-          <h2 class="about-text">A B O U T</h2>
+          <ul class="about-text fly-in hidden">
+            <li>A</li>
+            <li>B</li>
+            <li>O</li>
+            <li>U</li>
+            <li>T</li>
+          </ul>
           <div class="about-box flex-wrapper">
-            <h2 class="me-text">M E</h2>
+            <ul class="me-text fly-in hidden">
+              <li>M</li>
+              <li>E</li>
+            </ul>
             <div class="intro-box">
-              <h3>안녕하세요! 신입 웹 디자이너/퍼블리셔 <span>김민경</span>입니다.</h3>
-              <p>직접 구상한 디자인을 스스로 구현해냈을 때의 뿌듯함과 성취감을 좋아합니다.</p>
-              <p>현재에 안주하지 않고 끊임없이 노력해 계속해서 발전하겠습니다.</p>
+              <h3>
+                안녕하세요! 신입 웹 디자이너/퍼블리셔<span>김민경</span>입니다.
+              </h3>
+              <p>
+                직접 구상한 디자인을 스스로 구현해냈을 때의 뿌듯함과 성취감을
+                좋아합니다.
+              </p>
+              <p>
+                현재에 안주하지 않고 끊임없이 노력해 계속해서 발전하겠습니다.
+              </p>
               <ul class="intro-tag-box flex-wrapper">
-                <li><a href="#"># 꼼꼼함</a></li>
-                <li><a href="#"># 성실함</a></li>
-                <li><a href="#"># 책임감</a></li>
-                <li><a href="#"># 끈기 있음</a></li>
+                <li><a href="#"># 꼼꼼함
+                  <img class="hover-img" src="./assets/images/main-cat.svg" alt="">
+                </a></li>
+                <li><a href="#"># 성실함
+                  <img class="hover-img" src="./assets/images/main-cat.svg" alt="">
+                </a></li>
+                <li><a href="#"># 책임감
+                  <img class="hover-img" src="./assets/images/main-cat.svg" alt="">
+                </a></li>
+                <li><a href="#"># 끈기 있음
+                  <img class="hover-img" src="./assets/images/main-cat.svg" alt="">
+                </a></li>
               </ul>
             </div>
           </div>
@@ -86,7 +119,12 @@
 
       <section class="move-text-container">
         <div class="move-text-box">
-          <h2 class="move-text">MINGYEONG'S PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MINGYEONG'S PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MINGYEONG'S PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MINGYEONG'S PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+          <h2 class="move-text">
+            MINGYEONG'S PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MINGYEONG'S
+            PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MINGYEONG'S
+            PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MINGYEONG'S
+            PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </h2>
         </div>
       </section>
 
@@ -108,10 +146,10 @@
           </li>
           <li>
             <h3>UI Design</h3>
-            <p>Figma를 이용한 Prototype, Wireframe 제작</p>
-            <p>Adobe Illustrator를 통한 디자인 시안 및 이미지 소스 제작</p>
-            <p>Adobe Photoshop을 통한 이미지 편집 및 보정</p>
             <p>사용자의 편의성을 고려한 UI 디자인</p>
+            <p>Figma를 이용한 Prototype, Wireframe 제작</p>
+            <p>Adobe Photoshop을 통한 이미지 편집 및 보정</p>
+            <p>Adobe Illustrator를 통한 디자인 시안 및 이미지 소스 제작</p>
           </li>
           <li>
             <h3>Tool</h3>
@@ -129,26 +167,40 @@
           <h3 class="title">GLOBAL</h3>
           <div class="rise-text-box flex-wrapper">
             <h3 class="title">LOGISTICS</h3>
-            <p>2024.04<br>RISE GLOBAL LOGISTICS 웹사이트<br>리디자인/퍼블리싱</p>
+            <p>
+              2024.04<br />RISE GLOBAL LOGISTICS 웹사이트<br />리디자인/퍼블리싱
+            </p>
           </div>
-          <img src="./assets/images/rise.svg" alt="rise 웹사이트 리디자인 목업 사진">
+          <img
+            src="./assets/images/rise.svg"
+            alt="rise 웹사이트 리디자인 목업 사진"
+            >
         </div>
         <div onclick="location.href='#';" class="everparking-box project-box">
           <h2 class="title">EVER</h2>
           <div class="everparking-text-box flex-wrapper">
-            <p>2024.04<br />에버랜드 주차 예약 앱<br />UI/UX 디자인</p>
+            <p>2024.04<br>에버랜드 주차 예약 앱<br>UI/UX 디자인</p>
             <h2 class="title">PARKING</h2>
           </div>
-          <img src="./assets/images/everparking.svg" alt="에버파킹 ui/ux 디자인 프로젝트 목업 사진">
+          <img
+            src="./assets/images/everparking.svg"
+            alt="에버파킹 ui/ux 디자인 프로젝트 목업 사진"
+          >
         </div>
         <div onclick="location.href='#';" class="vivienne-box project-box">
           <h2 class="title">VIVI</h2>
           <div class="vivienne-text-box flex-wrapper">
             <h2 class="title">ENNE</h2>
-            <p>2024.05<br>비비안 웨스트우드 웹사이트<br>리디자인/반응형 웹 퍼블리싱</p>
+            <p>
+              2024.05<br />비비안 웨스트우드 웹사이트<br />리디자인/반응형 웹
+              퍼블리싱
+            </p>
           </div>
           <h3 class="title">WESTWOOD</h3>
-          <img src="./assets/images/vivienne-westwood.svg" alt="비비안느 리디자인/반응형 웹 퍼블리싱 프로젝트 목업 이미지">
+          <img
+            src="./assets/images/vivienne-westwood.svg"
+            alt="비비안느 리디자인/반응형 웹 퍼블리싱 프로젝트 목업 이미지"
+          >
         </div>
         <p class="ball grid-wrapper">View<br>more</p>
       </section>
@@ -157,17 +209,28 @@
     <footer>
       <div class="contact-container" id="contact">
         <h2>contact</h2>
-        <h3 class="e-mail">zouxy@naver.com</h3>
+        <div class="btn-box">
+          <a
+            href="https://github.com/mgkim4517/portfolio"
+            target="_blank"
+            class="button block-btn"
+          >
+            <p>GitHub 페이지로 이동</p>
+            <p>Portfolio 작업 일지</p>
+          </a>
+          <a
+            href="https://github.com/mgkim4517/study"
+            target="_blank"
+            class="button block-btn"
+          >
+            <p>GitHub 페이지로 이동</p>
+            <p>Publishing & Design 공부 일지</p>
+          </a>
+        </div>
       </div>
-      <div class="btn-box">
-        <a href="https://github.com/mgkim4517/portfolio" target="_blank" class="button block-btn">
-          <p>GitHub 페이지로 이동</p>
-          <p>Portfolio 작업 일지</p>
-        </a>
-        <a href="https://github.com/mgkim4517/study" target="_blank" class="button block-btn">
-          <p>GitHub 페이지로 이동</p>
-          <p>Publishing & Design 공부 일지</p>
-        </a>
+      <div class="footer-box flex-wrapper">
+        <p>© 2024 Design & Published By Kim Min-Gyeong All Rights Reserved</p>
+        <h3>zouxy@naver.com</h3>
       </div>
     </footer>
   </body>

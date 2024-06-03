@@ -1,0 +1,286 @@
+@charset "utf-8";
+/*** 폰트 설정 ***/
+/* 'Pretendard', sans-serif */
+@import url(./pretendard-subset.css);
+
+/* "Montserrat", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 'CWDangamAsac-Bold', sans-serif */
+@font-face {
+  font-family: 'CWDangamAsac-Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*** 변수 설정 ***/
+:root {
+  /* fonts */
+  --primary-font-en1: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --primary-font-en2: 'CWDangamAsac-Bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --primary-font-ko: 'Pretendard', -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+
+  --title-size-xxl: 380px;
+  --title-size-xl: 350px;
+  --title-size-lg: 330px;
+  --title-size-md: 250px;
+  --title-size-sm: 200px;
+  --title-size-sx: 180px;
+  --title-size-sxx: 64px;
+
+  --desc-size-md: 40px;
+  --desc-size-sm: 24px;
+  --desc-size-sx: 20px;
+  --desc-size-sxx: 18px;
+
+  /* color */
+  --bg-color-ivory: #FFF;
+
+  --list-color1: #8D8D8D;
+  --list-color2: #444444;
+  --list-color3: #DEDEDE;
+  --list-color4: #F3EBDF;
+  --list-color5: #fff;
+  --list-color6: #000;
+
+  /* 기타 */
+  --primary-radius: 100px;
+
+  /* 드래그 */
+  ::selection {
+    background-color: #d1b3b3;
+    color: #fff;
+  }
+
+  /* 스크롤바 */
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #d1b3b3;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--list-color2)
+      /* box-shadow: 0 1px 10px var(--list-color4); */
+  }
+
+  /* 공통 */
+  .side-padding {
+    padding: 0 62px;
+  }
+
+  .flex-wrapper {
+    display: flex;
+  }
+
+  .grid-wrapper {
+    display: grid;
+  }
+
+  .block-wrapper {
+    display: block;
+  }
+
+  /***** header *****/
+  /* menu */
+  header .gnb-menu.show-menu {
+    display: block;
+    z-index: -999;
+  }
+
+  header .gnb-container {
+    position: fixed;
+    top: 5%;
+    right: 50px;
+    z-index: 9999;
+  }
+
+  header .gnb-container .gnb-button {
+    background-color: var(--list-color3);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+  }
+
+  header .gnb-container .gnb-button:hover {
+    background-color: var(--list-color2);
+  }
+
+  header .gnb-container .gnb-button span {
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: var(--list-color4)
+  }
+
+  header .gnb-container .gnb-button .bar2 {
+    width: 50px;
+    margin: 12px 0;
+  }
+
+  header .gnb-container .gnb-button.toggle-btn .bar1 {
+    transform: translateY(15px) rotate(45deg);
+  }
+
+  header .gnb-container .gnb-button.toggle-btn .bar2 {
+    transform: scale(0);
+  }
+
+  header .gnb-container .gnb-button.toggle-btn .bar3 {
+    transform: translateY(-15px) rotate(-45deg);
+  }
+
+  header .transit {
+    transition: 0.3s;
+  }
+
+  header .gnb-menu {
+    background-color: var(--list-color6);
+    color: var(--list-color5);
+    width: 650px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    font-size: 48px;
+    font-family: var(--primary-font-en1);
+    font-weight: 500;
+    padding-top: 120px;
+  }
+
+  header .gnb-menu li {
+    padding: 40px 0 0 100px;
+  }
+
+  header .gnb-menu li a:hover {
+    border-bottom: 2px solid #fff;
+  }
+
+  header .gnb-menu .gnb-desc {
+    font-size: var(--desc-size-sx);
+    color: var(--list-color5);
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
+    text-align: right;
+  }
+
+  header .gnb-menu .gnb-desc p {
+    padding-top: 7px;
+  }
+
+  /***** footer *****/
+  footer {
+    /* padding: 0 33px; */
+    padding: 200px 33px 0 33px;
+  }
+
+  footer .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--list-color6);
+    border-bottom: 2px solid var(--list-color6);
+    padding: 20px 40px;
+  }
+
+  footer .contact-container h2 {
+    font-size: 96px;
+    font-family: var(--primary-font-en1);
+    color: var(--list-color6);
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  footer .contact-container h3 {
+    font-size: 64px;
+    font-weight: 600;
+  }
+  
+  /* 깃허브 이동 버튼 */
+  footer .btn-box {
+    padding: 50px 0 50px 0;
+    position: absolute;
+    right: 33px;
+  }
+
+  footer .btn-box a {
+    margin-left: 50px;
+  }
+
+  footer .btn-box .button {
+    font-family: var(--primary-font-ko);
+    font-weight: 300;
+    font-size: var(--desc-size-sxx);
+    background: transparent;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+  }
+
+  footer .btn-box .block-btn {
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+    box-shadow: none;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  footer .btn-box .block-btn p {
+    background: linear-gradient(0deg, #192551 5%, #47537D 100%);
+    width: 300px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+
+  footer .btn-box .block-btn p:nth-child(1) {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+
+  footer .btn-box .block-btn p:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+
+  footer .btn-box .block-btn:hover p:nth-child(1) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+
+  footer .btn-box .block-btn:hover p:nth-child(2) {
+    color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+}

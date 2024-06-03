@@ -197,17 +197,14 @@
     font-weight: 800;
     text-transform: uppercase;
   }
-
-  footer .contact-container h3 {
-    font-size: 64px;
-    font-weight: 600;
-  }
   
   /* 깃허브 이동 버튼 */
-  footer .btn-box {
-    padding: 50px 0 50px 0;
-    position: absolute;
-    right: 33px;
+  footer .contact-container .btn-box {
+    /* padding: 50px 0 50px 0; */
+    /* position: absolute;
+    right: 33px; */
+    display: flex;
+    align-items: center;
   }
 
   footer .btn-box a {
@@ -216,8 +213,8 @@
 
   footer .btn-box .button {
     font-family: var(--primary-font-ko);
-    font-weight: 300;
-    font-size: var(--desc-size-sxx);
+    font-weight: 400;
+    font-size: var(--desc-size-sx);
     background: transparent;
     color: #fff;
     border-radius: 5px;
@@ -230,19 +227,17 @@
 
   footer .btn-box .block-btn {
     position: relative;
-    right: 20px;
-    bottom: 20px;
     border: none;
     box-shadow: none;
     width: 300px;
-    height: 60px;
-    line-height: 60px;
+    height: 70px;
+    line-height: 70px;
   }
 
   footer .btn-box .block-btn p {
     background: linear-gradient(0deg, #192551 5%, #47537D 100%);
     width: 300px;
-    height: 60px;
+    height: 70px;
     border-radius: 5px;
     text-align: center;
     display: block;
@@ -283,4 +278,22 @@
     -moz-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
   }
+
+  footer .footer-box {
+    padding: 10px 30px 30px 30px;
+    justify-content: flex-end;
+    align-items: end;
+  }
+
+  footer .footer-box p {
+    font-size: var(--desc-size-sxx);
+    font-weight: 500;
+  }
+
+  footer .footer-box h3 {
+    font-size: var(--desc-size-sm);
+    font-weight: 600;
+    padding-left: 70px;
+  }
+
 }

@@ -39,38 +39,79 @@ main .main-container .main-bottom {
   left: 62px;
 }
 
-main .main-container .main-desc {
+main .main-container .title-wrapper {
   place-content: center;
   width: 100%;
   height: 100%;
 }
 
-main .main-container .main-desc .first-desc {
+main .main-container .title-wrapper .title-box .first-title {
   font-size: var(--title-size-ssx);
   color: var(--list-color1);
   font-weight: 900;
   line-height: 0.8;
+  animation-name: title;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
 }
 
-main .main-container .main-desc .second-desc {
+main .main-container .title-wrapper .title-box .second-title {
   font-size: var(--title-size-ssx);
   color: var(--list-color2);
   font-weight: 900;
   line-height: 0.8;
+  animation-name: title;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
 }
 
-main .main-container .main-desc .third-desc {
+main .main-container .title-wrapper .title-box .third-title {
   font-size: var(--title-size-ssx);
   color: var(--list-color3);
   font-weight: 900;
   justify-self: end;
   line-height: 0.8;
+  animation-name: title;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+}
+
+main .main-container .title-wrapper .title-box {
+  position: relative;
+  overflow: hidden;
+}
+
+main .main-container .title-wrapper .title-box .title {
+  display: inline;
+  position: relative;
+}
+
+@keyframes title {
+  0% {
+    top: 150px;
+  }
+  98% {
+    top: -5px;
+  }
+  100% {
+    top: 0%;
+  }
 }
 
 /*** about-container ***/
 main .about-container {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 main .about-container .about-wrapper {
@@ -81,7 +122,8 @@ main .about-container .about-wrapper {
   place-items: center;
 }
 
-main .about-container .about-wrapper h2 {
+main .about-container .about-wrapper .about-text li,
+main .about-container .about-wrapper .about-box .me-text li {
   font-family: var(--primary-font-en2);
   color: var(--list-color3);
   font-size: var(--title-size-md);
@@ -97,12 +139,12 @@ main .about-container .about-wrapper .about-box {
 }
 
 main .about-container .about-wrapper .about-box .me-text {
-  padding-right: 400px;
+  padding-right: 300px;
   padding-bottom: 100px;
 }
 
 main .about-container .about-wrapper .about-box .intro-box {
-  padding-right: 100px;
+  padding-right: 200px;
   text-align: right;
   padding-bottom: 100px;
 }
@@ -148,9 +190,51 @@ main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a {
   cursor: context-menu;
 }
 
+main .about-container .about-wrapper .about-box .intro-box .intro-tag-box .hover-img {
+  width: 300px;
+  position: absolute;
+  top: 30%; left: 49%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
 main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a:hover {
   background-color: var(--list-color3);
   color: var(--list-color4);
+}
+
+main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a:hover .hover-img {
+  display: block;
+}
+
+main .about-container .about-wrapper .fly-in li,
+main .about-container .about-wrapper .about-box .fly-in li {
+  display: inline-block;
+  margin-right: 30px;
+  opacity: 1;
+  transition: all 2.8s cubic-bezier(0.6, -.005, 0.32, 1.75);
+  padding: 0 20px;
+}
+
+main .about-container .about-wrapper .fly-in.hidden li,
+main .about-container .about-wrapper .about-box .fly-in.hidden li {
+  opacity: 0;
+}
+
+main .about-container .about-wrapper .fly-in.hidden li:nth-child(1) {
+  transform: translateX(150px) translateY(-170px); 
+}
+main .about-container .about-wrapper .fly-in.hidden li:nth-child(2) {
+  transform: translateX(-210px) translateY(170px); 
+}
+main .about-container .about-wrapper .fly-in.hidden li:nth-child(3) {
+  transform: translateX(20px) translateY(-100px); 
+}
+main .about-container .about-wrapper .fly-in.hidden li:nth-child(4) {
+  transform: translateX(-100px) translateY(-20px); 
+}
+main .about-container .about-wrapper .fly-in.hidden li:nth-child(5) {
+  transform: translateX(-70px) translateY(-200px); 
 }
 
 /* move-text-container */
@@ -337,7 +421,7 @@ main .project-container .everparking-box .everparking-text-box p {
   font-weight: 400;
   line-height: 1.4;
   padding-left: 20px;
-  text-align: right;
+  text-align: left;
 }
 
 main .project-container .everparking-box img {
@@ -375,7 +459,7 @@ main .vivienne-box .vivienne-text-box h2 {
 main .vivienne-box .vivienne-text-box p {
   font-family: var(--primary-font-ko);
   font-weight: 400;
-  text-align: left;
+  text-align: right;
   line-height: 1.4;
   padding-right: 20px;
 }
@@ -394,7 +478,7 @@ main .vivienne-box img {
 }
 
 /***** footer *****/
-footer .contact-container h3 {
+/* footer .contact-container h3 {
   display: inline-block;
   transform-origin: center;
   color: var(--list-color6);
@@ -413,4 +497,4 @@ footer .contact-container h3 {
   100% {
     transform: scale(1);
   }
-}
+} */
