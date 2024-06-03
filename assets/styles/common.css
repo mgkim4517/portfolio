@@ -171,7 +171,7 @@
     text-align: right;
   }
 
-  header .gnb-menu .gnb-desc p {
+  header .gnb-menu .gnb-desc li {
     padding-top: 7px;
   }
 
@@ -295,5 +295,4 @@
     font-weight: 600;
     padding-left: 70px;
   }
-
 }

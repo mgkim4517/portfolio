@@ -19,12 +19,6 @@ main .main-container {
   height: 100vh;
 }
 
-main .main-container .main-top {
-  position: absolute;
-  top: 70px;
-  right: 62px;
-}
-
 main .main-container .main-center {
   position: absolute;
   top: 45%;
@@ -33,11 +27,91 @@ main .main-container .main-center {
   z-index: -9999;
 }
 
-main .main-container .main-bottom {
+main .main-container .main-top-deco .right-circle {
   position: absolute;
-  bottom: 70px;
-  left: 62px;
+  top: 70px; right: 190px;
+  transition: .3s;
+  animation: sangha infinite .7s ease-in-out;
 }
+
+main .main-container .main-top-deco .right-small-shine {
+  position: absolute;
+  top: 120px; right: 80px;
+  transition: .3s;
+  animation: heundeul infinite .7s ease-in-out;
+}
+
+main .main-container .main-top-deco .right-big-shine {
+  position: absolute;
+  top: 180px; right: 140px;
+  transition: .3s;
+  animation: binggle infinite 2.5s ease-in-out;
+}
+
+main .main-container .main-bottom-deco .left-plus {
+  position: absolute;
+  bottom: 210px; left: 70px;
+  transition: .3s;
+  animation: binggle infinite 2.5s ease-in-out;
+}
+
+main .main-container .main-bottom-deco .left-triangle {
+  position: absolute;
+  bottom: 120px; left: 150px;
+  transition: .3s;
+  animation: heundeul infinite .7s ease-in-out;
+}
+
+main .main-container .main-bottom-deco .left-big-circle {
+  position: absolute;
+  bottom: 280px; left: 200px;
+  transition: .3s;
+  animation: sangha infinite .7s ease-in-out;
+}
+
+main .main-container .main-bottom-deco .left-small-circle {
+  position: absolute;
+  bottom: 170px; left: 270px;
+  transition: .3s;
+  animation: jwawoo infinite .7s ease-in-out;
+}
+
+@keyframes heundeul {
+  0%, 100% {
+    transform: translateX(5px) rotate(5deg);
+  }
+  50% {
+    transform: translateX(0) rotate(-5deg);
+  }
+}
+
+@keyframes binggle {
+  0%, 100% {
+    transform: translateX(0) rotate(180deg);
+  }
+  50% {
+    transform: translateX(0) rotate(-180deg);
+  }
+}
+
+@keyframes sangha {
+  0%, 100% {
+    transform: translateX(0) translateY(5px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(0) translateY(-5px) rotate(5deg);
+  }
+}
+
+@keyframes jwawoo {
+  0%, 100% {
+    transform: translateX(5px) translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(-5px) translateY(0) rotate(5deg);
+  }
+}
+
 
 main .main-container .title-wrapper {
   place-content: center;

@@ -1,237 +1,247 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <title>MINGYEONG</title>
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
-    />
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <!-- open graph -->
 
-    <!-- reset -->
-    <link rel="stylesheet" href="./assets/styles/reset.css">
-    <!-- fonts -->
-    <!-- plugIn style -->
-    <!-- 공통된 style -->
-    <link rel="stylesheet" href="./assets/styles/common.css">
-    <!-- 이 페이지만의 style -->
-    <link rel="stylesheet" href="./index.css">
-    <!-- jq -->
-    <script defer src="./index.js"></script>
-    <script src="./assets/jquery-3.7.1.min.js"></script>
-    <!-- plugIn js -->
-    <script src="./assets/jquery.min.js"></script>
-    <script src="./assets/TweenMax.min.js"></script>
-    <script src="./assets/gsap.min.js"></script>
-    <script src="./assets/ScrollToPlugin.min.js"></script>
-    <script src="./assets/jquery-2.1.1.min.js"></script>
-    <!-- 공통된 js -->
-    <script defer src="./assets/styles/common.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>MINGYEONG</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <!-- open graph -->
 
-  <body>
-    <header>
-      <!-- <h1><a href="#">로고</a></h1> -->
-      <nav class="gnb-container">
-        <div class="gnb-button transit grid">
-          <span class="bar1 transit"></span>
-          <span class="bar2 transit"></span>
-          <span class="bar3 transit"></span>
-        </div>
-        <ul class="gnb-menu transit">
-          <li><a href="#main"># MAIN</a></li>
-          <li><a href="#about"># ABOUT</a></li>
-          <li><a href="#skill"># SKILL</a></li>
-          <li><a href="#project"># PROJECT</a></li>
-          <li><a href="#contact"># CONTACT</a></li>
-          <div class="gnb-desc">
-            <p>Kim MinGyeong's Portfolio</p>
-            <p>zouxy@naver.com</p>
-          </div>
-        </ul>
-      </nav>
-    </header>
+  <!-- reset -->
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <!-- fonts -->
+  <!-- plugIn style -->
+  <!-- 공통된 style -->
+  <link rel="stylesheet" href="./assets/styles/common.css">
+  <!-- 이 페이지만의 style -->
+  <link rel="stylesheet" href="./index.css">
+  <!-- jq -->
+  <script defer src="./index.js"></script>
+  <script src="./assets/jquery-3.7.1.min.js"></script>
+  <!-- plugIn js -->
+  <script src="./assets/jquery.min.js"></script>
+  <script src="./assets/TweenMax.min.js"></script>
+  <script src="./assets/gsap.min.js"></script>
+  <script src="./assets/ScrollToPlugin.min.js"></script>
+  <script src="./assets/jquery-2.1.1.min.js"></script>
+  <!-- 공통된 js -->
+  <script defer src="./assets/styles/common.js"></script>
+</head>
 
-    <main>
-      <section class="main-container" id="main">
-        <img src="./assets/images/main-top.svg" alt="" class="main-top">
-        <div class="title-wrapper grid-wrapper">
-          <div class="title-box">
-              <h2 class="first-title title">PUBLISHER</h2>
-          </div>
-          <div class="title-box">
-              <h2 class="second-title title">& WEB DESIGNER</h2>
-          </div>
-          <div class="title-box grid-wrapper">
-              <h2 class="third-title title">PORTFOLIO</h2>
-          </div>
+<body>
+  <!--***** header *****-->
+  <header>
+    <!--*** gnb ***-->
+    <nav class="gnb-container">
+      <!--*** gnb-button ***-->
+      <div class="gnb-button transit grid">
+        <span class="bar1 transit"></span>
+        <span class="bar2 transit"></span>
+        <span class="bar3 transit"></span>
       </div>
-        <img src="./assets/images/main-center.svg" alt="" class="main-center">
-        <img src="./assets/images/main-bottom.svg" alt="" class="main-bottom">
-      </section>
-
-      <section class="about-container" id="about">
-        <div class="about-wrapper">
-          <ul class="about-text fly-in hidden">
-            <li>A</li>
-            <li>B</li>
-            <li>O</li>
-            <li>U</li>
-            <li>T</li>
+      <!--*** gnb-menu ***-->
+      <ul class="gnb-menu transit">
+        <li><a href="#main"># MAIN</a></li>
+        <li><a href="#about"># ABOUT</a></li>
+        <li><a href="#skill"># SKILL</a></li>
+        <li><a href="#project"># PROJECT</a></li>
+        <li><a href="#contact"># CONTACT</a></li>
+        <li>
+          <ul class="gnb-desc">
+            <li>Kim Min-Gyeong's Portfolio</li>
+            <li>zouxy@naver.com</li>
           </ul>
-          <div class="about-box flex-wrapper">
-            <ul class="me-text fly-in hidden">
-              <li>M</li>
-              <li>E</li>
-            </ul>
-            <div class="intro-box">
-              <h3>
-                안녕하세요! 신입 웹 디자이너/퍼블리셔<span>김민경</span>입니다.
-              </h3>
-              <p>
-                직접 구상한 디자인을 스스로 구현해냈을 때의 뿌듯함과 성취감을
-                좋아합니다.
-              </p>
-              <p>
-                현재에 안주하지 않고 끊임없이 노력해 계속해서 발전하겠습니다.
-              </p>
-              <ul class="intro-tag-box flex-wrapper">
-                <li><a href="#"># 꼼꼼함
-                  <img class="hover-img" src="./assets/images/main-cat.svg" alt="">
-                </a></li>
-                <li><a href="#"># 성실함
-                  <img class="hover-img" src="./assets/images/main-cat.svg" alt="">
-                </a></li>
-                <li><a href="#"># 책임감
-                  <img class="hover-img" src="./assets/images/main-cat.svg" alt="">
-                </a></li>
-                <li><a href="#"># 끈기 있음
-                  <img class="hover-img" src="./assets/images/main-cat.svg" alt="">
-                </a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-      <section class="move-text-container">
-        <div class="move-text-box">
-          <h2 class="move-text">
-            MINGYEONG'S PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MINGYEONG'S
-            PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MINGYEONG'S
-            PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MINGYEONG'S
-            PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          </h2>
+  <!--***** main *****-->
+  <main>
+    <!--*** main section ***-->
+    <section class="main-container" id="main">
+      <div class="main-top-deco">
+        <img class="right-circle" src="./assets/images/main-R-circle.svg" alt="꾸밈 요소 동그라미">
+        <img class="right-small-shine" src="./assets/images/main-RS-shine.svg" alt="꾸밈 요소 작은 반짝이">
+        <img class="right-big-shine" src="./assets/images/main_RB-shine.svg" alt="꾸밈 요소 큰 반짝이">
+      </div>
+      <div class="title-wrapper grid-wrapper">
+        <div class="title-box">
+          <h2 class="first-title title">PUBLISHER</h2>
         </div>
-      </section>
+        <div class="title-box">
+          <h2 class="second-title title">& WEB DESIGNER</h2>
+        </div>
+        <div class="title-box grid-wrapper">
+          <h2 class="third-title title">PORTFOLIO</h2>
+        </div>
+      </div>
+      <img src="./assets/images/main-center.svg" alt="" class="main-center">
+      <div class="main-bottom-deco">
+        <img class="left-plus" src="./assets/images/main-L-plus.svg" alt="꾸밈 요소 플러스">
+        <img class="left-triangle" src="./assets/images/main-L-triangle.svg" alt="꾸밈 요소 세모">
+        <img class="left-big-circle" src="./assets/images/main-LB-circle.svg" alt="꾸밈 요소 큰 동그라미">
+        <img class="left-small-circle" src="./assets/images/main-LS-circle.svg" alt="꾸밈 요소 작은 동그라미">
+      </div>
+    </section>
 
-      <section class="skill-container side-padding" id="skill">
-        <ul class="skill-box grid-wrapper">
-          <li>
-            <h3>HTML5 & CSS3</h3>
-            <p>웹 접근성을 고려한 시맨틱 마크업</p>
-            <p>Media Query를 이용한 반응형 웹 구현</p>
-            <p>Flex / Grid / Position으로 레이아웃 구축</p>
-            <p>transform 등 CSS를 이용한 다양한 스타일 구현</p>
-          </li>
-          <li>
-            <h3>JavaScript & jQuery</h3>
-            <p>ES6+ 문법 이해</p>
-            <p>다양한 매서드를 이용한 DOM 제어</p>
-            <p>효율적인 웹페이지 동작을 위한 비동기 처리 이해 및 활용</p>
-            <p>GSAP, SWIPER 등 플러그인을 사용한 다양한 이벤트 구현</p>
-          </li>
-          <li>
-            <h3>UI Design</h3>
-            <p>사용자의 편의성을 고려한 UI 디자인</p>
-            <p>Figma를 이용한 Prototype, Wireframe 제작</p>
-            <p>Adobe Photoshop을 통한 이미지 편집 및 보정</p>
-            <p>Adobe Illustrator를 통한 디자인 시안 및 이미지 소스 제작</p>
-          </li>
-          <li>
-            <h3>Tool</h3>
-            <p>Git Bash를 이용한 GitHub 관리</p>
-            <p>GitHub-Pages를 이용한 배포</p>
-            <p>GitHub Organization을 통한 협업 가능</p>
-            <p>Open API를 이용한 작업 가능</p>
-          </li>
+    <!--*** about section ***-->
+    <section class="about-container" id="about">
+      <div class="about-wrapper">
+        <ul class="about-text fly-in hidden">
+          <li>A</li>
+          <li>B</li>
+          <li>O</li>
+          <li>U</li>
+          <li>T</li>
         </ul>
-      </section>
-
-      <section class="project-container side-padding" id="project">
-        <div onclick="location.href='#';" class="rise-box project-box">
-          <h2 class="title">RISE</h2>
-          <h3 class="title">GLOBAL</h3>
-          <div class="rise-text-box flex-wrapper">
-            <h3 class="title">LOGISTICS</h3>
+        <div class="about-box flex-wrapper">
+          <ul class="me-text fly-in hidden">
+            <li>M</li>
+            <li>E</li>
+          </ul>
+          <div class="intro-box">
+            <h3>
+              안녕하세요! 신입 웹 디자이너/퍼블리셔 <span>김민경</span>입니다.
+            </h3>
             <p>
-              2024.04<br />RISE GLOBAL LOGISTICS 웹사이트<br />리디자인/퍼블리싱
+              직접 구상한 디자인을 스스로 구현해냈을 때의 뿌듯함과 성취감을
+              좋아합니다.
             </p>
-          </div>
-          <img
-            src="./assets/images/rise.svg"
-            alt="rise 웹사이트 리디자인 목업 사진"
-            >
-        </div>
-        <div onclick="location.href='#';" class="everparking-box project-box">
-          <h2 class="title">EVER</h2>
-          <div class="everparking-text-box flex-wrapper">
-            <p>2024.04<br>에버랜드 주차 예약 앱<br>UI/UX 디자인</p>
-            <h2 class="title">PARKING</h2>
-          </div>
-          <img
-            src="./assets/images/everparking.svg"
-            alt="에버파킹 ui/ux 디자인 프로젝트 목업 사진"
-          >
-        </div>
-        <div onclick="location.href='#';" class="vivienne-box project-box">
-          <h2 class="title">VIVI</h2>
-          <div class="vivienne-text-box flex-wrapper">
-            <h2 class="title">ENNE</h2>
             <p>
-              2024.05<br />비비안 웨스트우드 웹사이트<br />리디자인/반응형 웹
-              퍼블리싱
+              현재에 안주하지 않고 끊임없이 노력해 계속해서 발전하겠습니다.
             </p>
+            <ul class="intro-tag-box flex-wrapper">
+              <li><a href="#"># 꼼꼼함
+                  <img class="hover-img" src="./assets/images/main-cat.svg" alt="">
+                </a></li>
+              <li><a href="#"># 성실함
+                  <img class="hover-img" src="./assets/images/main-cat.svg" alt="">
+                </a></li>
+              <li><a href="#"># 책임감
+                  <img class="hover-img" src="./assets/images/main-cat.svg" alt="">
+                </a></li>
+              <li><a href="#"># 끈기 있음
+                  <img class="hover-img" src="./assets/images/main-cat.svg" alt="">
+                </a></li>
+            </ul>
           </div>
-          <h3 class="title">WESTWOOD</h3>
-          <img
-            src="./assets/images/vivienne-westwood.svg"
-            alt="비비안느 리디자인/반응형 웹 퍼블리싱 프로젝트 목업 이미지"
-          >
-        </div>
-        <p class="ball grid-wrapper">View<br>more</p>
-      </section>
-    </main>
-
-    <footer>
-      <div class="contact-container" id="contact">
-        <h2>contact</h2>
-        <div class="btn-box">
-          <a
-            href="https://github.com/mgkim4517/portfolio"
-            target="_blank"
-            class="button block-btn"
-          >
-            <p>GitHub 페이지로 이동</p>
-            <p>Portfolio 작업 일지</p>
-          </a>
-          <a
-            href="https://github.com/mgkim4517/study"
-            target="_blank"
-            class="button block-btn"
-          >
-            <p>GitHub 페이지로 이동</p>
-            <p>Publishing & Design 공부 일지</p>
-          </a>
         </div>
       </div>
-      <div class="footer-box flex-wrapper">
-        <p>© 2024 Design & Published By Kim Min-Gyeong All Rights Reserved</p>
-        <h3>zouxy@naver.com</h3>
+    </section>
+
+    <!--*** moving text ***-->
+    <section class="move-text-container">
+      <div class="move-text-box">
+        <h2 class="move-text">
+          MINGYEONG'S PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MINGYEONG'S
+          PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MINGYEONG'S
+          PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MINGYEONG'S
+          PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </h2>
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <!--*** skill section ***-->
+    <section class="skill-container side-padding" id="skill">
+      <ul class="skill-box grid-wrapper">
+        <li>
+          <h3>HTML5 & CSS3</h3>
+          <p>웹 접근성을 고려한 시맨틱 마크업</p>
+          <p>Media Query를 이용한 반응형 웹 구현</p>
+          <p>Flex / Grid / Position으로 레이아웃 구축</p>
+          <p>transform 등 CSS를 이용한 다양한 스타일 구현</p>
+        </li>
+        <li>
+          <h3>JavaScript & jQuery</h3>
+          <p>ES6+ 문법 이해</p>
+          <p>다양한 매서드를 이용한 DOM 제어</p>
+          <p>효율적인 웹 페이지 동작을 위한 비동기 처리 이해 및 활용</p>
+          <p>GSAP, SWIPER 등 플러그인을 사용한 다양한 이벤트 구현</p>
+        </li>
+        <li>
+          <h3>UI Design</h3>
+          <p>사용자의 편의성을 고려한 UI 디자인</p>
+          <p>Figma를 이용한 Prototype, Wireframe 제작</p>
+          <p>Adobe Photoshop을 통한 이미지 편집 및 보정</p>
+          <p>Adobe Illustrator를 통한 디자인 시안 및 이미지 소스 제작</p>
+        </li>
+        <li>
+          <h3>Tool</h3>
+          <p>Git Bash를 이용한 GitHub 관리</p>
+          <p>GitHub-Pages를 이용한 배포</p>
+          <p>GitHub Organization을 통한 협업 가능</p>
+          <p>Open API를 이용한 작업 가능</p>
+        </li>
+      </ul>
+    </section>
+
+    <!--*** project section ***-->
+    <section class="project-container side-padding" id="project">
+      <!--* project : rise *-->
+      <div onclick="location.href='#';" class="rise-box project-box">
+        <h2 class="title">RISE</h2>
+        <h3 class="title">GLOBAL</h3>
+        <div class="rise-text-box flex-wrapper">
+          <h3 class="title">LOGISTICS</h3>
+          <p>
+            2024.04<br>RISE GLOBAL LOGISTICS 웹사이트<br>리디자인/퍼블리싱
+          </p>
+        </div>
+        <img src="./assets/images/rise.svg" alt="rise 웹사이트 리디자인 목업 사진">
+      </div>
+
+      <!--* project : everparking *-->
+      <div onclick="location.href='#';" class="everparking-box project-box">
+        <h2 class="title">EVER</h2>
+        <div class="everparking-text-box flex-wrapper">
+          <p>2024.04<br>에버랜드 주차 예약 앱<br>UI/UX 디자인</p>
+          <h2 class="title">PARKING</h2>
+        </div>
+        <img src="./assets/images/everparking.svg" alt="에버파킹 ui/ux 디자인 프로젝트 목업 사진">
+      </div>
+
+      <!--* project : vivienne-westwood *-->
+      <div onclick="location.href='#';" class="vivienne-box project-box">
+        <h2 class="title">VIVI</h2>
+        <div class="vivienne-text-box flex-wrapper">
+          <h2 class="title">ENNE</h2>
+          <p>
+            2024.05<br>비비안 웨스트우드 웹사이트<br>리디자인/반응형 웹 퍼블리싱
+          </p>
+        </div>
+        <h3 class="title">WESTWOOD</h3>
+        <img src="./assets/images/vivienne-westwood.svg" alt="비비안느 리디자인/반응형 웹 퍼블리싱 프로젝트 목업 이미지">
+      </div>
+      <!--* mouse hover *-->
+      <p class="ball grid-wrapper">View<br>more</p>
+    </section>
+  </main>
+
+  <!--***** footer *****-->
+  <footer>
+    <!--*** contact section ***-->
+    <div class="contact-container" id="contact">
+      <h2>contact</h2>
+      <!--* github button *-->
+      <div class="btn-box">
+        <a href="https://github.com/mgkim4517/portfolio" target="_blank" class="button block-btn">
+          <p>GitHub 페이지로 이동</p>
+          <p>Portfolio 작업 일지</p>
+        </a>
+        <a href="https://github.com/mgkim4517/study" target="_blank" class="button block-btn">
+          <p>GitHub 페이지로 이동</p>
+          <p>Publishing & Design 공부 일지</p>
+        </a>
+      </div>
+    </div>
+    <div class="footer-box flex-wrapper">
+      <p>© 2024 Design & Published By Kim Min-Gyeong All Rights Reserved</p>
+      <h3>zouxy@naver.com</h3>
+    </div>
+  </footer>
+</body>
+
 </html>
