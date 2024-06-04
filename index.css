@@ -27,6 +27,33 @@ main .main-container .main-center {
   z-index: -9999;
 }
 
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#first,
+#second,
+#third,
+#last {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -1000;
+  animation: draw 2s linear forwards;
+}
+#second,
+#third,
+#last {
+  animation-delay: 1.11s;
+}
+#third,
+#last {
+  animation-delay: 2.2s;
+}
+
+#last {
+  animation-delay: 4.15s;
+}
+
 main .main-container .main-top-deco .right-circle {
   position: absolute;
   top: 70px; right: 190px;

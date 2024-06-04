@@ -9,67 +9,84 @@
     />
 
     <style>
-      body {
-        background-color: black;
-        margin: 30px;
-        font-family: "Zilla Slab", serif;
-        color: rgb(0, 0, 0);
-        font-size: 120px;
-        line-height: 90px;
-        text-align: left;
+      /* #first {
+        stroke-dasharray: 620;
+        stroke-dashoffset: -620;
+        animation: first-ani 1s linear 0s forwards;
+      }
+      #second {
+        stroke-dasharray: 460;
+        stroke-dashoffset: -460;
+        animation: second-ani 1s linear 1s forwards;
+      }
+      #third {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: -1000;
+        animation: third-ani 1s linear 2s forwards;
+      }
+      #last {
+        stroke-dasharray: 100;
+        stroke-dashoffset: -100;
+        animation: last-ani 1s linear 2s forwards;
       }
 
-      .title-box {
-        /* border:1px solid pink; */
-        /* width:720px;
-        height: 125px; */
-        margin: 0 auto;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .title {
-        display: inline;
-        position: relative;
-      }
-
-      .first-title {
-        animation-name: intro;
-        animation-duration: .5s;
-        animation-iteration-count: 1;
-        animation-timing-function: ease;
-        animation-delay: 1s;
-        animation-fill-mode: backwards;
-      }
-
-      @keyframes intro {
-        0% {
-          top: 150px;
+      @keyframes first-ani {
+        from {
+          stroke-dashoffset: -620px;
         }
-        98% {
-          top: -5px;
-        }
-        100% {
-          top: 0%;
+        to {
+          stroke-dashoffset: 0px;
         }
       }
-
-      .second-title {
-        animation-name: intro;
-        animation-duration: .5s;
-        animation-iteration-count: 1;
-        animation-timing-function: ease;
-        animation-delay: 1.5s;
-        animation-fill-mode: backwards;
+      @keyframes second-ani {
+        from {
+          stroke-dashoffset: 460px;
+        }
+        to {
+          stroke-dashoffset: 0px;
+        }
+      }
+      @keyframes third-ani {
+        from {
+          stroke-dashoffset: 1000px;
+        }
+        to {
+          stroke-dashoffset: 0px;
+        }
+      }
+      @keyframes last-ani {
+        from {
+          stroke-dashoffset: 100px;
+        }
+        to {
+          stroke-dashoffset: 0px;
+        }
+      } */
+      @keyframes draw {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+      #first,
+      #second,
+      #third,
+      #last {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: -1000;
+        animation: draw 2s linear forwards;
+      }
+      #second,
+      #third,
+      #last {
+        animation-delay: 1.11s;
+      }
+      #third,
+      #last {
+        animation-delay: 2.2s;
       }
 
-      .third-title {
-        animation-name: intro;
-        animation-duration: .5s;
-        animation-iteration-count: 1;
-        animation-timing-function: ease;
-        animation-delay: 2s;
-        animation-fill-mode: backwards;
+      #last {
+        animation-delay: 4.15s;
       }
     </style>
     <!-- favicon -->
@@ -82,7 +99,7 @@
     <!-- 공통된 style -->
     <link rel="stylesheet" href="./assets/styles/common.css" />
     <!-- 이 페이지만의 style -->
-    <link rel="stylesheet" href="./index.css" />
+    <!-- <link rel="stylesheet" href="./index.css" /> -->
     <!-- jq -->
     <!-- <script defer src="./index.js"></script> -->
     <script src="./assets/jquery-3.7.1.min.js"></script>
@@ -96,29 +113,77 @@
   </head>
 
   <body>
-    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab:700" rel="stylesheet">
+    <!-- <svg
+      width="432"
+      height="883"
+      viewBox="0 0 432 883"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+      id="third"
+        d="M129.512 455.863L129.512 649.637C129.512 677.044 151.73 699.262 179.137 699.262V699.262C206.544 699.262 228.762 677.044 228.762 649.637L228.762 455.863"
+        stroke="#F3EBDF"
+        stroke-width="8"
+        stroke-linecap="round"
+      />
+      <path
+      id="first"
+        d="M328 456L328 649.774C328 677.181 350.218 699.399 377.625 699.399V699.399C405.032 699.399 427.25 677.181 427.25 649.774L427.25 4"
+        stroke="#F3EBDF"
+        stroke-width="8"
+        stroke-linecap="round"
+      />
+      <path
+      id="second"
+        d="M228.762 455.863L228.762 257.363C228.762 229.956 250.98 207.738 278.387 207.738V207.738C305.794 207.738 328.012 229.956 328.012 257.363L328.012 455.863"
+        stroke="#F3EBDF"
+        stroke-width="8"
+        stroke-linecap="round"
+      />
+      <path
+      id="last"
+        d="M27.1716 881.328C28.7337 882.891 31.2663 882.891 32.8284 881.328L58.2843 855.873C59.8464 854.31 59.8464 851.778 58.2843 850.216C56.7222 848.654 54.1895 848.654 52.6274 850.216L30 872.843L7.37259 850.216C5.8105 848.654 3.27784 848.654 1.71574 850.216C0.153643 851.778 0.153643 854.31 1.71574 855.873L27.1716 881.328ZM30 257.625L26 257.625L30 257.625ZM129.25 257.625L125.25 257.625V257.625L129.25 257.625ZM125.25 463C125.25 465.209 127.041 467 129.25 467C131.459 467 133.25 465.209 133.25 463L125.25 463ZM34 878.5L34 257.625L26 257.625L26 878.5L34 878.5ZM125.25 257.625L125.25 463L133.25 463L133.25 257.625L125.25 257.625ZM79.625 212C104.823 212 125.25 232.427 125.25 257.625L133.25 257.625C133.25 228.009 109.241 204 79.625 204L79.625 212ZM34 257.625C34 232.427 54.427 212 79.625 212L79.625 204C50.0088 204 26 228.009 26 257.625L34 257.625Z"
+        fill="#F3EBDF"
+      />
+    </svg> -->
 
-<div class="container">
-    <p class="title title1">we are<p>
-</div>
-<div class="container">
-    <p class="title title2">here<p>
-</div>
-<div class="container">
-    <p class="title title3">to<p>
-</div>
-
-<div class="title-wrapper grid-wrapper">
-    <div class="title-box">
-        <h2 class="first-title title title1">PUBLISHER</h2>
-    </div>
-    <div class="title-box">
-        <h2 class="second-title title title2">& WEB DESIGNER</h2>
-    </div>
-    <div class="title-box">
-        <h2 class="third-title title title3">PORTFOLIO</h2>
-    </div>
-</div>
+    <svg
+      width="406"
+      height="879"
+      viewBox="0 0 406 879"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+      id="third"
+        d="M103.512 451.863L103.512 645.637C103.512 673.044 125.73 695.262 153.137 695.262V695.262C180.544 695.262 202.762 673.044 202.762 645.637L202.762 451.863"
+        stroke="#F3EBDF"
+        stroke-width="8"
+        stroke-linecap="round"
+      />
+      <path
+      id="first"
+        d="M302 452L302 645.774C302 673.181 324.218 695.399 351.625 695.399V695.399C379.032 695.399 401.25 673.181 401.25 645.774L401.25 4.5"
+        stroke="#F3EBDF"
+        stroke-width="8"
+        stroke-linecap="round"
+      />
+      <path
+      id="second"
+        d="M202.762 451.863L202.762 253.363C202.762 225.956 224.98 203.738 252.387 203.738V203.738C279.794 203.738 302.012 225.956 302.012 253.363L302.012 451.863"
+        stroke="#F3EBDF"
+        stroke-width="8"
+        stroke-linecap="round"
+      />
+      <path
+      id="last"
+        d="M4.00001 874.5L4.00003 253.625C4.00003 226.218 26.2179 204 53.625 204V204C81.0322 204 103.25 226.218 103.25 253.625L103.25 459"
+        stroke="#F3EBDF"
+        stroke-width="8"
+        stroke-linecap="round"
+      />
+    </svg>
 
     <script></script>
   </body>
