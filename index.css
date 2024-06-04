@@ -291,12 +291,48 @@ main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a {
   cursor: context-menu;
 }
 
-main .about-container .about-wrapper .about-box .intro-box .intro-tag-box .hover-img {
-  width: 300px;
+/* main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a figure {
   position: absolute;
   top: 30%; left: 49%;
   transform: translate(-50%, -50%);
+}
+
+main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a figure .hover-img {
+  width: 430px;
+}
+
+main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a figure .circle-text {
+  width: 500px;
+  animation: rotate_image 6s linear infinite;
+  transform-origin: 50% 50%;
+} */
+
+
+main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a figure .hover-img {
+  width: 600px;
+  position: absolute;
+  top: 50%; left: 30%;
+  transform: translate(-50%, -50%);
   display: none;
+}
+
+main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a figure .circle-text {
+  width: 680px;
+  position: absolute;
+  top: 50%; left: 30%;
+  transform: translate(-50%, -50%);
+  animation: rotate_image 12s linear infinite;
+  transform-origin: center center;
+  display: none;
+}
+
+@keyframes rotate_image{
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a:hover {
@@ -305,6 +341,10 @@ main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a:h
 }
 
 main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a:hover .hover-img {
+  display: block;
+}
+
+main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a:hover .circle-text {
   display: block;
 }
 
