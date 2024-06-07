@@ -208,6 +208,31 @@ main .main-container .title-wrapper .title-box .title {
   }
 }
 
+/*** move-text-container ***/
+.move-text-container {
+  position: relative;
+  overflow: hidden;
+  background: var(--list-color2);
+  height: 80px;
+  line-height: 80px;
+  margin: 50px 0;
+}
+
+.move-text-container .move-text-box {
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.move-text-container .move-text-box .move-text {
+  display: inline-block;
+  font-size: var(--desc-size-md);
+  font-weight: 900;
+  color: var(--bg-color-ivory);
+  /* -webkit-text-stroke: 5px #fff; */
+  white-space: nowrap;
+}
+
 /*** about-container ***/
 main .about-container {
   width: 100%;
@@ -291,23 +316,6 @@ main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a {
   cursor: context-menu;
 }
 
-/* main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a figure {
-  position: absolute;
-  top: 30%; left: 49%;
-  transform: translate(-50%, -50%);
-}
-
-main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a figure .hover-img {
-  width: 430px;
-}
-
-main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a figure .circle-text {
-  width: 500px;
-  animation: rotate_image 6s linear infinite;
-  transform-origin: 50% 50%;
-} */
-
-
 main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a figure .hover-img {
   width: 600px;
   position: absolute;
@@ -376,30 +384,6 @@ main .about-container .about-wrapper .fly-in.hidden li:nth-child(4) {
 }
 main .about-container .about-wrapper .fly-in.hidden li:nth-child(5) {
   transform: translateX(-70px) translateY(-200px); 
-}
-
-/* move-text-container */
-.move-text-container {
-  position: relative;
-  overflow: hidden;
-  background: var(--list-color2);
-  height: 80px;
-  line-height: 80px;
-}
-
-.move-text-container .move-text-box {
-  position: absolute;
-  right: 0;
-  width: 100%;
-}
-
-.move-text-container .move-text-box .move-text {
-  display: inline-block;
-  font-size: var(--desc-size-md);
-  font-weight: 900;
-  color: var(--bg-color-ivory);
-  /* -webkit-text-stroke: 5px #fff; */
-  white-space: nowrap;
 }
 
 /*** skill-container ***/
