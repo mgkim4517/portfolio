@@ -27,6 +27,33 @@ main .main-container .main-center {
   z-index: -9999;
 }
 
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#first,
+#second,
+#third,
+#last {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -1000;
+  animation: draw 2s linear forwards;
+}
+#second,
+#third,
+#last {
+  animation-delay: 1.11s;
+}
+#third,
+#last {
+  animation-delay: 2.2s;
+}
+
+#last {
+  animation-delay: 4.15s;
+}
+
 main .main-container .main-top-deco .right-circle {
   position: absolute;
   top: 70px; right: 190px;
@@ -181,6 +208,31 @@ main .main-container .title-wrapper .title-box .title {
   }
 }
 
+/*** move-text-container ***/
+.move-text-container {
+  position: relative;
+  overflow: hidden;
+  background: var(--list-color2);
+  height: 80px;
+  line-height: 80px;
+  margin: 50px 0;
+}
+
+.move-text-container .move-text-box {
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.move-text-container .move-text-box .move-text {
+  display: inline-block;
+  font-size: var(--desc-size-md);
+  font-weight: 900;
+  color: var(--bg-color-ivory);
+  /* -webkit-text-stroke: 5px #fff; */
+  white-space: nowrap;
+}
+
 /*** about-container ***/
 main .about-container {
   width: 100%;
@@ -264,12 +316,31 @@ main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a {
   cursor: context-menu;
 }
 
-main .about-container .about-wrapper .about-box .intro-box .intro-tag-box .hover-img {
-  width: 300px;
+main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a figure .hover-img {
+  width: 600px;
   position: absolute;
-  top: 30%; left: 49%;
+  top: 50%; left: 30%;
   transform: translate(-50%, -50%);
   display: none;
+}
+
+main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a figure .circle-text {
+  width: 680px;
+  position: absolute;
+  top: 50%; left: 30%;
+  transform: translate(-50%, -50%);
+  animation: rotate_image 12s linear infinite;
+  transform-origin: center center;
+  display: none;
+}
+
+@keyframes rotate_image{
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a:hover {
@@ -278,6 +349,10 @@ main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a:h
 }
 
 main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a:hover .hover-img {
+  display: block;
+}
+
+main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a:hover .circle-text {
   display: block;
 }
 
@@ -309,30 +384,6 @@ main .about-container .about-wrapper .fly-in.hidden li:nth-child(4) {
 }
 main .about-container .about-wrapper .fly-in.hidden li:nth-child(5) {
   transform: translateX(-70px) translateY(-200px); 
-}
-
-/* move-text-container */
-.move-text-container {
-  position: relative;
-  overflow: hidden;
-  background: var(--list-color2);
-  height: 80px;
-  line-height: 80px;
-}
-
-.move-text-container .move-text-box {
-  position: absolute;
-  right: 0;
-  width: 100%;
-}
-
-.move-text-container .move-text-box .move-text {
-  display: inline-block;
-  font-size: var(--desc-size-md);
-  font-weight: 900;
-  color: var(--bg-color-ivory);
-  /* -webkit-text-stroke: 5px #fff; */
-  white-space: nowrap;
 }
 
 /*** skill-container ***/
