@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>LALASWEET project</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <!-- open graph -->
+  <meta property="og:title" content="Kim Mingyeong's portfolio">
+  <meta property="og:description" content="안녕하세요 김민경의 포트폴리오입니다.">
+  <meta property="og:image" content="https://mgkim4517.github.io/portfolio/assets/images/og.png">
+  <meta property="og:url" content="https://mgkim4517.github.io/portfolio/">
+  <!-- reset -->
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <!-- fonts -->
+  <!-- plugIn style -->
+  <!-- 공통된 style -->
+  <link rel="stylesheet" href="./assets/styles/common.css">
+  <!-- 이 페이지만의 style -->
+  <link rel="stylesheet" href="./lalasweet.css">
+  <!-- jq -->
+  <script defer src="./index.js"></script>
+  <script src="./assets/jquery-3.7.1.min.js"></script>
+  <!-- plugIn js -->
+
+  <!-- 공통된 js -->
+  <script defer src="./assets/styles/common.js"></script>
+</head>
+
+<body>
+  <!--***** header *****-->
+  <header>
+    <!--*** gnb ***-->
+    <nav class="gnb-container">
+      <!--*** gnb-button ***-->
+      <div class="gnb-button transit grid">
+        <span class="bar1 transit"></span>
+        <span class="bar2 transit"></span>
+        <span class="bar3 transit"></span>
+      </div>
+      <!--*** gnb-menu ***-->
+      <ul class="gnb-menu transit">
+        <li><a href="#main"># MAIN</a></li>
+        <li><a href="#about"># ABOUT</a></li>
+        <li><a href="#skill"># SKILL</a></li>
+        <li><a href="#project"># PROJECT</a></li>
+        <li><a href="#contact"># CONTACT</a></li>
+        <li>
+          <ul class="gnb-desc">
+            <li>Kim Min-Gyeong's Portfolio</li>
+            <li>zouxy@naver.com</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <p class="page-info">MINGYEONG'S PORTFOLIO - PROJECT - LALASWEET</p>
+  </header>
+ 
+  <!--***** main *****-->
+  <main>
+    <!--*** main-container ***-->
+    <section class="main-container">
+      <img src="" alt="">
+      <div class="main-wrapper">
+        <p>2024.06.04 ~ 2024.06.14</p>
+        <h2>LALASWEET</h2>
+        <h3>반응형 웹 리디자인 & 퍼블리싱</h3>
+        <h3>개인 프로젝트 (100%)</h3>
+        <ul class="main-tools">
+          <li># FIGMA</li>
+          <li># JavaScript</li>
+          <li>jQuery</li>
+          <li>MediaQuery</li>
+          <li># GSAP</li>
+          <li># SWIPER</li>
+        </ul>
+      </div>
+    </section>
+
+    <!--*** situation-container ***-->
+    <section class="situation-container">
+      <h4>Situation</h4>
+      <ul class="situation-desc">
+        <li>기존 라라스윗의 홈페이지는 다양한 디바이스 사용자를 고려하지 않은 <span>적응형</span> 웹사이트</li>
+        <li>라라스윗 브랜드만의 <span>개성을 살리지 못한</span>디자인이라는 생각이 들었음</li>
+      </ul>
+    </section>
+
+    <!--*** task-container ***-->
+    <section class="task-container">
+      <h4>Task</h4>
+      <ul class="task-desc">
+        <li><span>반응형 웹 구현</span>을 통해 반응형 웹 작업에 대한 이해를 높임</li>
+        <li>브랜드 <span>아이덴티티</span>를 파악하고 <span>개성</span>을 드러낼 수 있는 디자인으로 변경</li>
+        <li>스크롤에 따른 애니메이션 효과를 위해 GSAP의 <span>scrollTrigger</span> 플러그인 사용</li>
+      </ul>
+    </section>
+    <!-- style-container -->
+    <section class="style-container">
+      <h4>Style Guide</h4>
+      <div class="keyword-wrapper">
+        <h3>KEYWORD</h3>
+        <ul class="keword-box">
+          <li># 깔끔한</li>
+          <li># 트렌디한</li>
+          <li># 개성있는</li>
+        </ul>
+      </div>
+      <div class="color-wrapper">
+        <h3>COLOR</h3>
+        <ul class="color-box">
+          <li>#065EA2</li>
+          <li>#4BACDB</li>
+          <li>#FFCE6C</li>
+        </ul>
+        <ul class="color-desc">
+          <li>로고 컬러를 사용하여 브랜드 <span>아이덴티티</span>를 살렸습니다.</li>
+          <li>시원한 느낌을 주는 파란색과 노란색을 함께 사용하여 <span>아이스크림</span>을 연상시켰습니다.</li>
+        </ul>
+      </div>
+      <div class="fonts-wrapper">
+        <h3>FONTS</h3>
+        <ul class="fonts-box">
+          <li class="main-en-font">메인 영문 폰트
+            <ul class="Mango-font">
+              <li>Mango Grotesque Black</li>
+              <li>Mango Grotesque Extra Bold</li>
+              <li>Mango Grotesque Bold</li>
+              <li>Mango Grotesque Semi Bold</li>
+            </ul>
+          </li>
+          <li class="main-ko-font">메인 한글 폰트
+            <ul class="gmarket-font">
+              <li>지마켓 산스 Bold</li>
+              <li>지마켓 산스 Medium</li>
+              <li>지마켓 산스 Light</li>
+            </ul>
+          </li>
+          <li class="sub-ko-font">서브 한글 폰트
+            <ul class="pretenddard-font">
+              <li>프리텐다드 Medium</li>
+              <li>프리텐다드 Regular</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+     
+    <!--*** issue-container ***-->
+    <section class="issue-container">
+      <h3>Issue & Resolving</h3>
+      <div class="info-desc1">
+        <h4>1. 사이즈가 큰 폰트를 사용했을 때, 윈도우 크기를 축소해도 <span>레이아웃이 망가지지 않게</span> 하려면 어떻게 해야 할까?</h4>
+        <p>→ 미디어 쿼리를 세밀하게 나눠 폰트 사이즈를 설정함</p>
+        <img src="" alt="">
+      </div>
+      <div class="info-desc2">
+        <h4>2. 사용자가 스와이퍼 영역임을 <span>쉽게 인식</span>하게 하려면 어떻게 해야 할까?</h4>
+        <p>→ SWIPER 옵션 중 autoplay 기능을 사용해 3초마다 다음 슬라이드로 넘어가게 함</p>
+        <img src="" alt="">
+      </div>
+      <div class="info-desc3">
+        <h4>3. mix-blend-mode 사용 시 내가 <span>설정하지 않은 컬러</span>로 보이는데 어떡하지?</h4>
+        <p>→ 반전된 컬러를 설정하여 반전되었을 때 기존에 사용하고자 했던 컬러가 보이도록 함</p>
+        <div>
+          <img src="" alt="">
+          <img src="" alt="">
+          <img src="" alt="">
+        </div>
+      </div>
+      <div class="info-desc4">
+        <h4>4. SWIPER의 <span>prev, next 버튼의 좌우 위치</span>가 바뀌었는데, 어떤 코드를 넣어도 위치가 바뀌지 않는데 어떡하지?</h4>
+        <p>→ 개발자 모드를 통해 swiper-bundle.css의 버튼 스타일이 문제임을 확인해 삭제함</p>
+        <img src="" alt="">
+      </div>
+    </section>
+
+    <!--*** review-container ***-->
+    <section class="review-container">
+      <h3>Review</h3>
+      <div class="regret-box">
+        <h4>✓ 아쉬움</h4>
+        <ul class="regret-desc">
+          <li>전체적인 분위기에 어울리는 이미지와 영상을 사용하고 싶었습니다. 그러나 선택의 여지가 제한적이었고, 이미지는 저화질뿐이어서 아쉬웠습니다.</li>
+          <li>Pagination이 없는 스와이퍼라 사용자가 쉽게 인식할 수 있도록 양쪽에 이전 및 다음 이미지가 보이도록 구현하고자 했습니다. 그러나 모바일 버전에서 문제가 생겨 구현하지 못한 점이 아쉬웠습니다. 수료 후 시간적 여유가 생긴다면 꼭 다시 수정해 보고 싶습니다.</li>
+        </ul>
+      </div>
+      <div class="success-box">
+        <h4>✓ 성과</h4>
+        <ul class="success-desc">
+          <li>기획한 목표를 완벽하게 달성하지는 못했지만, 정해진 시간 안에 <span>스스로 기획, 디자인, 퍼블리싱까지 완료</span>할 수 있어서 뿌듯했습니다.</li>
+          <li>반응형 웹이라서 하나의 코드 수정으로 다른 디바이스에서 문제가 발생하는 경우가 자주 있었지만, <span>포기하지 않고 끝까지 문제를 해결</span>하기 위해 노력했습니다/</li>
+        </ul>
+      </div>
+      <div class="learned-box">
+        <h4>✓ 배운 점</h4>
+        <p>기획부터 디자인, 퍼블리싱까지 혼자서 진행해야 했기 때문에 처음에는 조금 막막했습니다. 그러나 천천히 계획을 세우고 차근차근 진행하다 보니, 혼자만의 노력으로 결과물을 완성할 수 있어서 매우 뿌듯했습니다.</p>
+        <p>이번 프로젝트를 진행하면서 <span>mix-blend-mode</span> 코드에 대해 새롭게 알게 되었습니다. 겹쳐제는 콘텐츠에 따라 색상이 바뀌는 것이 매우 매력적이라고 느꼈습니다. 다음에는 다른 값으로 이 코드를 사용해 보고 싶습니다.</p>
+        <p>또한, <span>slidesPerView, spaceBetween, breakpoints</span> 등 새로운 SWIPER 플러그인 옵션에 대해 새롭게 배우게 되었습니다. 이번에는 사용하지 못한 것이 아쉽지만, 추후에 프로젝트를 수정할 기회가 생긴다면 꼭 이 옵션들을 활용해 보고 싶습니다.</p>
+        <p>처음으로 혼자 진행한 반응형 웹 구현 프로젝트라 아쉬운 점이 많습니다. 결과물이 완벽하지는 않지만, 이번 프로젝트를 통해 쌓은 <span>경험을 바탕으로 성장</span>하고, 다음 프로젝트에서는 좀 더 완성도 높은 반응형 웹을 제작하고 싶습니다.</p>
+      </div>
+    </section>
+  </main>
+</body>
+
+<!--***** footer *****-->
+<footer>
+  <div class="btn-box">
+    <a href="#">작업 일지 보러 가기</a>
+    <a href="#">결과물 보러 가기</a>
+  </div>
+  <a href="#">
+    <img src="" alt="">
+  </a>
+</footer>
+</html>
