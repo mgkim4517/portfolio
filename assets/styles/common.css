@@ -14,6 +14,13 @@
   font-style: normal;
 }
 
+/* 'GmarketSans', sans-serif */
+/* weight 300 : light / 500 : medium / 700 : bold */
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+
+/* "Mango Grotesque" */
+@import url(./MangoGrotesque.css);
+
 /*** 변수 설정 ***/
 :root {
   /* fonts */
@@ -21,6 +28,7 @@
   --primary-font-en2: 'CWDangamAsac-Bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --primary-font-ko: 'Pretendard', -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
 
+  /* index 페이지 폰트 크기 */
   --title-size-xxl: 380px;
   --title-size-xl: 350px;
   --title-size-lg: 330px;
@@ -34,22 +42,31 @@
   --desc-size-sx: 20px;
   --desc-size-sxx: 18px;
 
+  /* project 상세 페이지 폰트 크기 */
+  --project-size-xxl: 28px;
+  --project-size-xl: 24px;
+  --project-size-lg: 22px;
+  --project-size-md: 20px;
+  --project-size-sm: 18px;
+  --project-size-xs: 16px;
+
   /* color */
   --bg-color-ivory: #FFFDF5;
 
-  --list-color1: #192551;
-  --list-color2: #37436A;
-  --list-color3: #47537D;
+  --list-color1: #B67878;
+  --list-color2: #D8A3A3;
+  --list-color3: #F3C6C6;
   --list-color4: #F3EBDF;
   --list-color5: #fff;
   --list-color6: #000;
+  --point-color: #FF416E;
 
   /* 기타 */
   --primary-radius: 100px;
 
   /* 드래그 */
   ::selection {
-    background-color: #d1b3b3;
+    background-color: #ad9dbd;
     color: #fff;
   }
 
@@ -59,11 +76,11 @@
   }
 
   ::-webkit-scrollbar-track {
-    background-color: #d1b3b3;
+    background-color: var(--bg-color-ivory);
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: var(--list-color2)
+    background-color: var(--list-color3)
       /* box-shadow: 0 1px 10px var(--list-color4); */
   }
 
@@ -99,7 +116,7 @@
   }
 
   header .gnb-container .gnb-button {
-    background-color: var(--list-color3);
+    background-color: var(--list-color2);
     width: 90px;
     height: 90px;
     border-radius: 50%;
@@ -109,7 +126,7 @@
   }
 
   header .gnb-container .gnb-button:hover {
-    background-color: var(--list-color2);
+    background-color: var(--list-color1);
   }
 
   header .gnb-container .gnb-button span {
@@ -176,11 +193,6 @@
   }
 
   /***** footer *****/
-  footer {
-    /* padding: 0 33px; */
-    padding: 200px 33px 0 33px;
-  }
-
   footer .contact-container {
     display: flex;
     justify-content: space-between;

@@ -1,3 +1,10 @@
+## 240618
+* lalasweet 상세 페이지 css 완성
+
+## 240617
+* project 상세 페이지 디자인 + 내용 완성
+* lalasweet 상세 페이지 html 완성
+
 ## 240616
 * project 상세 페이지 디자인 + 내용 수정
 

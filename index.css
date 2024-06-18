@@ -482,6 +482,7 @@ main .project-container .rise-box h2 {
   font-weight: 900;
   line-height: 0.7;
   padding-top: 211px;
+  color: #555;
 }
 
 main .project-container .rise-box h3 {
@@ -489,6 +490,7 @@ main .project-container .rise-box h3 {
   font-weight: 900;
   line-height: 0.7;
   padding-top: 92px;
+  color: #555;
 }
 
 main .project-container .rise-box .rise-text-box {
@@ -527,6 +529,7 @@ main .project-container .everparking-box h2 {
   line-height: 0.7;
   text-align: right;
   padding-top: 307px;
+  color: #555;
 }
 
 main .project-container .everparking-box .everparking-text-box {
@@ -539,6 +542,7 @@ main .project-container .everparking-box .everparking-text-box h2 {
   font-weight: 900;
   line-height: 0.7;
   padding-top: 94px;
+  color: #555;
 }
 
 main .project-container .everparking-box .everparking-text-box p {
@@ -567,6 +571,7 @@ main .vivienne-box h2 {
   font-weight: 900;
   line-height: 0.7;
   padding-top: 159px;
+  color: #555;
 }
 
 main .vivienne-box .vivienne-text-box {
@@ -579,6 +584,7 @@ main .vivienne-box .vivienne-text-box h2 {
   font-weight: 900;
   line-height: 0.7;
   padding-top: 42px;
+  color: #555;
 }
 
 main .vivienne-box .vivienne-text-box p {
@@ -594,6 +600,7 @@ main .vivienne-box h3 {
   font-weight: 900;
   line-height: 0.7;
   padding-top: 29px;
+  color: #555;
 }
 
 main .vivienne-box img {
@@ -623,3 +630,8 @@ main .vivienne-box img {
     transform: scale(1);
   }
 } */
+
+footer {
+  /* padding: 0 33px; */
+  padding: 200px 33px 0 33px;
+}
