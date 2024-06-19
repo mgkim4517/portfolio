@@ -1,9 +1,11 @@
 ## 240619
 * everparking 상세 페이지 내용 수정
+* everparking 상세 페이지 html 완성
+* everparking 상세 페이지 css 완성
 
 ## 240618
 * lalasweet 상세 페이지 css 완성
-* lalasweet 상세 페이지 js 완성
+* project 상세 페이지 js 완성
 * everparking 상세 페이지 내용 작성
 
 ## 240617
