@@ -286,7 +286,7 @@ main .about-container .about-wrapper .about-box .intro-box h3 span {
   font-family: var(--primary-font-ko);
   font-weight: 500;
   font-size: 25px;
-  background-color: var(--list-color3);
+  background-color: var(--list-color1);
   color: var(--list-color5);
   padding: 0 3px;
 }
@@ -305,10 +305,10 @@ main .about-container .about-wrapper .about-box .intro-box .intro-tag-box {
 
 main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a {
   font-family: var(--primary-font-ko);
-  color: var(--list-color3);
+  color: var(--list-color1);
   font-size: var(--desc-size-sx);
   font-weight: 600;
-  border: 3px solid var(--list-color3);
+  border: 3px solid var(--list-color2);
   border-radius: var(--primary-radius);
   padding: 8px 22px;
   margin-left: 20px;
@@ -448,7 +448,7 @@ main .project-container .ball {
   top: 0;
   left: 0;
   text-align: center;
-  background-color: var(--list-color3);
+  background-color: var(--list-color1);
   color: #fff;
   font-size: var(--desc-size-sx);
   font-weight: 600;

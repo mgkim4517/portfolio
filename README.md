@@ -1,18 +1,27 @@
+## 240619
+* everparking 상세 페이지 내용 수정
+
 ## 240618
 * lalasweet 상세 페이지 css 완성
+* lalasweet 상세 페이지 js 완성
+* everparking 상세 페이지 내용 작성
 
 ## 240617
-* project 상세 페이지 디자인 + 내용 완성
+* project 상세 페이지 디자인 완성
+* lalasweet 상세 페이지 내용 완성
 * lalasweet 상세 페이지 html 완성
 
 ## 240616
-* project 상세 페이지 디자인 + 내용 수정
+* project 상세 페이지 디자인
+* lalasweet 상세 페이지 내용 수정
 
 ## 240615
-* project 상세 페이지 디자인 + 내용 수정
+* project 상세 페이지 디자인
+* lalasweet 상세 페이지 내용 수정
 
 ## 240614
-* project 상세 페이지 디자인 + 내용 작성
+* project 상세 페이지 디자인
+* lalasweet 상세 페이지 내용 작성
 
 ## 240604
 * main-container의 svg 이미지에 애니메이션 효과 구현

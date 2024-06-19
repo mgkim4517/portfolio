@@ -3,6 +3,13 @@
 /* 'Pretendard', sans-serif */
 @import url(./pretendard-subset.css);
 
+/* 'GmarketSans', sans-serif */
+/* weight 300 : light / 500 : medium / 700 : bold */
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+
+/* "Mango Grotesque" */
+@import url(./MangoGrotesque.css);
+
 /* "Montserrat", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -14,19 +21,15 @@
   font-style: normal;
 }
 
-/* 'GmarketSans', sans-serif */
-/* weight 300 : light / 500 : medium / 700 : bold */
-@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
-
-/* "Mango Grotesque" */
-@import url(./MangoGrotesque.css);
-
 /*** 변수 설정 ***/
 :root {
   /* fonts */
   --primary-font-en1: "Montserrat", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --primary-font-en2: 'CWDangamAsac-Bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --primary-font-ko: 'Pretendard', -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+
+  --lalasweet-font-en: "Mango Grotesque", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --lalasweet-font-ko: 'GmarketSans', -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
 
   /* index 페이지 폰트 크기 */
   --title-size-xxl: 380px;
@@ -54,8 +57,8 @@
   --bg-color-ivory: #FFFDF5;
 
   --list-color1: #B67878;
-  --list-color2: #D8A3A3;
-  --list-color3: #F3C6C6;
+  --list-color2: #c49292;
+  --list-color3: #d3a7a7;
   --list-color4: #F3EBDF;
   --list-color5: #fff;
   --list-color6: #000;
@@ -80,7 +83,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: var(--list-color3)
+    background-color: var(--list-color2);
       /* box-shadow: 0 1px 10px var(--list-color4); */
   }
 
@@ -117,8 +120,8 @@
 
   header .gnb-container .gnb-button {
     background-color: var(--list-color2);
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     display: grid;
     place-content: center;
@@ -131,18 +134,18 @@
 
   header .gnb-container .gnb-button span {
     display: block;
-    width: 50px;
+    width: 45px;
     height: 4px;
-    background-color: var(--list-color4)
+    background-color: var(--list-color5);
   }
 
   header .gnb-container .gnb-button .bar2 {
-    width: 50px;
-    margin: 12px 0;
+    width: 45px;
+    margin: 10px 0;
   }
 
   header .gnb-container .gnb-button.toggle-btn .bar1 {
-    transform: translateY(15px) rotate(45deg);
+    transform: translateY(13.5px) rotate(45deg);
   }
 
   header .gnb-container .gnb-button.toggle-btn .bar2 {
@@ -150,7 +153,7 @@
   }
 
   header .gnb-container .gnb-button.toggle-btn .bar3 {
-    transform: translateY(-15px) rotate(-45deg);
+    transform: translateY(-13.5px) rotate(-45deg);
   }
 
   header .transit {
