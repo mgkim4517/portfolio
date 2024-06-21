@@ -1,3 +1,6 @@
+## 240620
+* everparking 완료 보고서 내용 수정
+
 ## 240619
 * everparking 상세 페이지 내용 수정
 * everparking 상세 페이지 html 완성
