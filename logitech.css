@@ -41,6 +41,7 @@ main .main-container .main-wrapper {
   padding: 99px 0 0 54px;
 }
 
+
 main .main-container .main-wrapper p {
   font-size: var(--project-size-xs);
   color: #999;
@@ -69,10 +70,10 @@ main .main-container .main-wrapper h3 span {
 
 main .main-container .main-wrapper .main-tools {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  width: 450px;
-  gap: 25px;
+  width: 350px;
+  gap: 35px;
   padding-top: 87px;
 }
 
@@ -161,7 +162,7 @@ main .task-container .task-desc li span {
 main .style-container {
   background-color: var(--list-color4);
   width: 1420px;
-  height: 1200px;
+  height: 1050px;
   display: grid;
   grid-template-columns: 600px 820px;
   border-radius: 40px;
@@ -230,18 +231,23 @@ main .style-container .style-wrapper .color-wrapper .color-box li {
 }
 
 main .style-container .style-wrapper .color-wrapper .color-box li:nth-child(1) {
-  background-color: #065EA2;
+  background-color: #000;
   color: var(--list-color5);
 }
 
 main .style-container .style-wrapper .color-wrapper .color-box li:nth-child(2) {
-  background-color: #4BACDB;
+  background-color: #808080;
   color: var(--list-color5);
 }
 
 main .style-container .style-wrapper .color-wrapper .color-box li:nth-child(3) {
-  background-color: #FFCE6C;
+  background-color: #fff;
   color: var(--color-list6);
+}
+
+main .style-container .style-wrapper .color-wrapper .color-box li:nth-child(4) {
+  background-color: #4682B4;
+  color: var(--list-color5);
 }
 
 main .style-container .style-wrapper .color-wrapper .color-desc {
@@ -289,48 +295,6 @@ main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info {
   padding-top: 50px;
 }
 
-main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .Mango-font {
-  padding-left: 80px;
-  font-size: 32px;
-  font-family: "Mango Grotesque", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.2;
-}
-
-main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .Mango-font li:nth-child(1) {
-  font-weight: 900;
-}
-
-main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .Mango-font li:nth-child(2) {
-  font-weight: 800;
-}
-
-main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .Mango-font li:nth-child(3) {
-  font-weight: 700;
-}
-
-main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .Mango-font li:nth-child(4) {
-  font-weight: 600;
-}
-
-main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .gmarket-font {
-  padding-left: 80px;
-  font-size: 28px;
-  font-family: 'GmarketSans', -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
-  line-height: 1.4;
-}
-
-main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .gmarket-font li:nth-child(1) {
-  font-weight: 700;
-}
-
-main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .gmarket-font li:nth-child(2) {
-  font-weight: 500;
-}
-
-main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .gmarket-font li:nth-child(3) {
-  font-weight: 300;
-}
-
 main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .pretendard-font {
   padding-left: 80px;
   font-size: 28px;
@@ -338,10 +302,33 @@ main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .prete
 }
 
 main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .pretendard-font li:nth-child(1) {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .pretendard-font li:nth-child(2) {
+  font-weight: 500;
+}
+
+main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .pretendard-font li:nth-child(3) {
+  font-weight: 400;
+}
+
+main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .pretendard-font li:nth-child(4) {
+  font-weight: 300;
+}
+
+main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .S-CoreDream-font {
+  padding-left: 80px;
+  font-size: 28px;
+  font-family: 'S-CoreDream', -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif;
+  line-height: 1.4;
+}
+
+main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .S-CoreDream-font li:nth-child(1) {
+  font-weight: 500;
+}
+
+main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .S-CoreDream-font li:nth-child(2) {
   font-weight: 400;
 }
 
@@ -349,7 +336,7 @@ main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .prete
 main .issue-container {
   background-color: var(--list-color4);
   width: 1420px;
-  height: 1600px;
+  height: 720px;
   display: grid;
   grid-template-columns: 600px 820px;
   border-radius: 40px;
@@ -385,6 +372,10 @@ main .issue-container .issue-wrapper .issue-desc1 p {
   font-weight: 400;
 }
 
+main .issue-container .issue-wrapper .issue-desc1 img {
+  width: 420px;
+}
+
 main .issue-container .issue-wrapper .issue-desc2 h4 {
   font-size: var(--project-size-md);
   font-weight: 400;
@@ -403,57 +394,15 @@ main .issue-container .issue-wrapper .issue-desc2 p {
   font-weight: 400;
 }
 
-main .issue-container .issue-wrapper .issue-desc3 h4 {
-  font-size: var(--project-size-md);
-  font-weight: 400;
-  padding-top: 100px;
-}
-
-main .issue-container .issue-wrapper .issue-desc3 h4 span {
-  font-size: var(--project-size-lg);
-  color: var(--point-color);
-  font-weight: 600;
-}
-
-main .issue-container .issue-wrapper .issue-desc3 p {
-  padding: 20px 0;
-  font-size: var(--project-size-sm);
-  font-weight: 400;
-}
-
-main .issue-container .issue-wrapper .issue-desc3 .desc3-img {
-  display: grid;
-  grid-template-columns: 220px 160px 220px;
-}
-
-main .issue-container .issue-wrapper .issue-desc3 .desc3-img .issue-arrow {
-  place-self: center;
-}
-
-main .issue-container .issue-wrapper .issue-desc4 h4 {
-  font-size: var(--project-size-md);
-  font-weight: 400;
-  padding-top: 100px;
-  line-height: 1.5;
-}
-
-main .issue-container .issue-wrapper .issue-desc4 h4 span {
-  font-size: var(--project-size-lg);
-  color: var(--point-color);
-  font-weight: 600;
-}
-
-main .issue-container .issue-wrapper .issue-desc4 p {
-  padding: 20px 0;
-  font-size: var(--project-size-sm);
-  font-weight: 400;
+main .issue-container .issue-wrapper .issue-desc2 img {
+  width: 420px;
 }
 
 /*** review-container ***/
 main .review-container {
   background-color: var(--list-color4);
   width: 1420px;
-  height: 1300px;
+  height: 1020px;
   display: grid;
   grid-template-columns: 600px 820px;
   border-radius: 40px;
@@ -508,6 +457,11 @@ main .review-container .review-wrapper .success-box .success-desc li {
   padding-bottom: 20px;
 }
 
+main .review-container .review-wrapper .success-box .success-desc li span {
+  font-weight: 500;
+  color: var(--point-color);
+}
+
 main .review-container .review-wrapper .learned-box h4 {
   font-size: var(--project-size-xl);
   font-weight: 400;
@@ -524,10 +478,6 @@ main .review-container .review-wrapper .learned-box p {
 
 main .review-container .review-wrapper .learned-box .learned-desc1 {
   padding: 25px 0 25px 30px;
-}
-
-main .review-container .review-wrapper .learned-box .learned-desc2 {
-  padding-bottom: 25px;
 }
 
 main .review-container .review-wrapper .learned-box p span {

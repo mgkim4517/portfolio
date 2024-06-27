@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "S-CoreDream";
+  src: local("S-CoreDream Regular"), url(../fonts/SCDream4.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-size: swap;
+}
+
+@font-face {
+  font-family: "S-CoreDream";
+  src: local("S-CoreDream Medium"), url(../fonts/SCDream5.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 500;
+  font-size: swap;
+}
