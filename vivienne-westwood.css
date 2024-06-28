@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+body {
+  background-color: var(--bg-color-ivory);
+  font-family: var(--primary-font-ko);
+  box-sizing: border-box;
+  width: 1420px;
+  margin: 0 auto;
+}
+
+/***** header *****/
+/*** gnb ***/
+header .gnb-menu {
+  display: none;
+}
+
+header .page-info {
+  text-align: center;
+  padding-top: 21px;
+  font-size: var(--project-size-xs);
+  font-weight: 400;
+}
+
+/***** main *****/
+/*** main-container ***/
+main .main-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 750px 670px;
+  grid-template-rows: 650px;
+  padding-top: 120px;
+}
+
+main .main-container .video {
+  width: 100%;
+  background-color: #ddd;
+}
+
+main .main-container .main-wrapper {
+  padding: 40px 0 0 54px;
+}
+
+main .main-container .main-wrapper p {
+  font-size: var(--project-size-xs);
+  color: #999;
+  font-weight: 300;
+  text-align: left;
+}
+
+main .main-container .main-wrapper h2 {
+  font-family: var(--primary-font-en1);
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 1;
+  /* padding-top: 11px; */
+  padding-bottom: 20px;
+  color: var(--list-color6);
+}
+
+main .main-container .main-wrapper h3 {
+  font-size: var(--project-size-xl);
+  font-weight: 400;
+  padding-top: 29px;
+  color: var(--list-color6);
+}
+
+main .main-container .main-wrapper h3 span {
+  background:linear-gradient(180deg,rgba(255, 246, 122, 0) 70%, #FFCE6C 50%);
+}
+
+main .main-container .main-wrapper .main-tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 500px;
+  column-gap: 25px;
+  row-gap: 20px;
+  padding-top: 60px;
+}
+
+main .main-container .main-wrapper .main-tools li {
+  font-size: var(--project-size-xs);
+  font-weight: 400;
+  border: 2px solid var(--list-color3);
+  border-radius: 50px;
+  padding: 10px 20px;
+  text-align: center;
+  color: var(--list-color6);
+}
+
+main .main-container .main-wrapper .main-tools li:hover {
+  background-color: var(--list-color3);
+}
+
+/*** overview-container ***/
+main .overview-container {
+  background-color: var(--list-color4);
+  height: 215px;
+  display: grid;
+  grid-template-columns: 600px 820px;
+  border-radius: 40px;
+}
+
+main .overview-container h4 {
+  font-size: var(--project-size-xxl);
+  font-weight: 200;
+  place-self: center;
+  color: var(--list-color6);
+}
+
+main .overview-container .overview-desc {
+  place-content: center;
+  list-style: disc;
+  line-height: 2.5;
+}
+
+main .overview-container .overview-desc li {
+  font-size: var(--project-size-md);
+  font-weight: 400;
+  color: var(--list-color6);
+}
+
+main .overview-container .overview-desc li span {
+  font-size: var(--project-size-lg);
+  color: var(--point-color);
+  font-weight: 600;
+}
+
+main .part-container {
+  background-color: var(--list-color4);
+  height: 250px;
+  display: grid;
+  grid-template-columns: 600px 820px;
+  border-radius: 40px;
+  margin-top: 150px;
+  place-content: center;
+}
+
+main .part-container h4 {
+  font-size: var(--project-size-xxl);
+  font-weight: 200;
+  place-self: center;
+  color: var(--list-color6);
+}
+
+main .part-container .part-box {
+  display: block;
+}
+
+main .part-container .part-box .part-box1,
+main .part-container .part-box .part-box2 {
+  display: flex;
+  gap: 30px;
+}
+
+main .part-container .part-box .part-box2 {
+  margin-top: 30px;
+}
+
+main .part-container .part-box .part-box1 li,
+main .part-container .part-box .part-box2 li {
+  font-size: var(--project-size-md);
+  font-weight: 400;
+  /* border: 2px solid var(--list-color3); */
+  border-radius: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: var(--list-color5);
+  color: var(--list-color6);
+}
+
+main .part-container .part-box .part-box1 li:nth-child(1) {
+  width: 150px;
+}
+
+main .part-container .part-box .part-box1 li:nth-child(2) {
+  width: 480px;
+}
+
+main .part-container .part-box .part-box2 li:nth-child(1) {
+  width: 280px;
+}
+
+main .part-container .part-box .part-box2 li:nth-child(2) {
+  width: 400px;
+}
+
+/*** review-container ***/
+main .review-container {
+  background-color: var(--list-color4);
+  height: 1230px;
+  display: grid;
+  grid-template-columns: 600px 820px;
+  border-radius: 40px;
+  margin-top: 150px;
+  place-content: center;
+}
+
+main .review-container h3 {
+  font-size: var(--project-size-xxl);
+  font-weight: 200;
+  place-self: center;
+  color: var(--list-color6);
+}
+
+main .review-container .review-wrapper {
+  place-content: center;
+  padding-right: 80px;
+}
+
+main .review-container .review-wrapper .regret-box h4 {
+  font-size: var(--project-size-xl);
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+main .review-container .review-wrapper .regret-box .regret-desc {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+main .review-container .review-wrapper .regret-box .regret-desc li {
+  font-size: var(--project-size-sm);
+  font-weight: 400;
+  line-height: 1.7;
+  padding-bottom: 20px;
+}
+
+main .review-container .review-wrapper .success-box h4 {
+  font-size: var(--project-size-xl);
+  font-weight: 400;
+  padding-bottom: 20px;
+  padding-top: 80px;
+}
+
+main .review-container .review-wrapper .success-box .success-desc {
+  list-style: disc;
+  padding-left: 30px;
+}
+
+main .review-container .review-wrapper .success-box .success-desc li {
+  font-size: var(--project-size-sm);
+  font-weight: 400;
+  line-height: 1.7;
+  padding-bottom: 20px;
+}
+
+main .review-container .review-wrapper .success-box .success-desc li span {
+  font-weight: 500;
+  color: var(--point-color);
+}
+
+main .review-container .review-wrapper .learned-box h4 {
+  font-size: var(--project-size-xl);
+  font-weight: 400;
+  padding-bottom: 20px;
+  padding-top: 80px;
+}
+
+main .review-container .review-wrapper .learned-box p {
+  font-size: var(--project-size-sm);
+  font-weight: 400;
+  line-height: 1.7;
+  padding-left: 30px;
+}
+
+main .review-container .review-wrapper .learned-box .learned-desc1,
+main .review-container .review-wrapper .learned-box .learned-desc2 {
+  padding: 25px 0 25px 30px;
+}
+
+main .review-container .review-wrapper .learned-box p span {
+  font-weight: 500;
+  color: var(--point-color);
+}
+
+/***** footer *****/
+footer {
+  padding: 100px 0 50px 0;
+  position: relative;
+}
+
+footer .btn-box {
+  text-align: right;
+}
+
+footer .btn-box a {
+  font-size: 32px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50px;
+  width: 350px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  display: inline-block;
+}
+
+footer .btn-box a:hover {
+  background-color: #151515;
+}
+
+footer .go-to-top img {
+  background-color: var(--list-color2);
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  bottom: 150px; right: -160px;
+}
+
+footer .go-to-top img:hover {
+  background-color: var(--list-color1);
+}

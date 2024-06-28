@@ -79,9 +79,9 @@ window.addEventListener("scroll", appear);
 
 // about-container 텍스트 이벤트
 $(window).scroll(function() {
-  var aboutContainerTop = $('.about-container').offset().top;
-  var windowHeight = $(window).height();
-  var scrollTop = $(window).scrollTop();
+  let aboutContainerTop = $('.about-container').offset().top;
+  let windowHeight = $(window).height();
+  let scrollTop = $(window).scrollTop();
 
   if (scrollTop + windowHeight >= aboutContainerTop) {
       setTimeout(function() {

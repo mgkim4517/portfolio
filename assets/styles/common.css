@@ -7,9 +7,6 @@
 /* weight 300 : light / 500 : medium / 700 : bold */
 @import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 
-/* "Mango Grotesque" */
-@import url(./MangoGrotesque.css);
-
 /* "Montserrat", sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -59,13 +56,28 @@
   /* color */
   --bg-color-ivory: #FFFDF5;
 
-  --list-color1: #B67878;
-  --list-color2: #c49292;
-  --list-color3: #d3a7a7;
+  /* --list-color1: #192551;
+  --list-color2: #37436A;
+  --list-color3: #47537D;
   --list-color4: #F3EBDF;
   --list-color5: #fff;
   --list-color6: #000;
+  --point-color: #FF416E; */
+
+
+  --color-red: #D56270;
+  --color-yellow: #EFD07A;
+  --color-lightgreen: #B3C2AB;
+  --color-green: #77AF80;
+  --color-blue: #5F7BCD;
+  --color-beige: #F3EBDF;
+  --color-white: #fff;
   --point-color: #FF416E;
+
+  --900-black: #000;
+  --800-black: #111;
+  --700-black: #333;
+  --600-black: #555;
 
   /* 기타 */
   --primary-radius: 100px;
@@ -196,121 +208,5 @@
 
   header .gnb-menu .gnb-desc li {
     padding-top: 7px;
-  }
-
-  /***** footer *****/
-  footer .contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 2px solid var(--list-color6);
-    border-bottom: 2px solid var(--list-color6);
-    padding: 20px 40px;
-  }
-
-  footer .contact-container h2 {
-    font-size: 96px;
-    font-family: var(--primary-font-en1);
-    color: var(--list-color6);
-    font-weight: 800;
-    text-transform: uppercase;
-  }
-  
-  /* 깃허브 이동 버튼 */
-  footer .contact-container .btn-box {
-    /* padding: 50px 0 50px 0; */
-    /* position: absolute;
-    right: 33px; */
-    display: flex;
-    align-items: center;
-  }
-
-  footer .btn-box a {
-    margin-left: 50px;
-  }
-
-  footer .btn-box .button {
-    font-family: var(--primary-font-ko);
-    font-weight: 400;
-    font-size: var(--desc-size-sx);
-    background: transparent;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-  }
-
-  footer .btn-box .block-btn {
-    position: relative;
-    border: none;
-    box-shadow: none;
-    width: 300px;
-    height: 70px;
-    line-height: 70px;
-  }
-
-  footer .btn-box .block-btn p {
-    background: linear-gradient(0deg, #192551 5%, #47537D 100%);
-    width: 300px;
-    height: 70px;
-    border-radius: 5px;
-    text-align: center;
-    display: block;
-    position: absolute;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-  }
-
-  footer .btn-box .block-btn p:nth-child(1) {
-    -webkit-transform: rotateX(90deg);
-    -moz-transform: rotateX(90deg);
-    transform: rotateX(90deg);
-    -webkit-transform-origin: 50% 50% -20px;
-    -moz-transform-origin: 50% 50% -20px;
-    transform-origin: 50% 50% -20px;
-  }
-
-  footer .btn-box .block-btn p:nth-child(2) {
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-    -webkit-transform-origin: 50% 50% -20px;
-    -moz-transform-origin: 50% 50% -20px;
-    transform-origin: 50% 50% -20px;
-  }
-
-  footer .btn-box .block-btn:hover p:nth-child(1) {
-    -webkit-transform: rotateX(0deg);
-    -moz-transform: rotateX(0deg);
-    transform: rotateX(0deg);
-  }
-
-  footer .btn-box .block-btn:hover p:nth-child(2) {
-    color: transparent;
-    -webkit-transform: rotateX(-90deg);
-    -moz-transform: rotateX(-90deg);
-    transform: rotateX(-90deg);
-  }
-
-  footer .footer-box {
-    padding: 10px 30px 30px 30px;
-    justify-content: flex-end;
-    align-items: end;
-  }
-
-  footer .footer-box p {
-    font-size: var(--desc-size-sxx);
-    font-weight: 500;
-  }
-
-  footer .footer-box h3 {
-    font-size: var(--desc-size-sm);
-    font-weight: 600;
-    padding-left: 70px;
   }
 }
