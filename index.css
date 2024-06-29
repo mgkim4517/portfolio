@@ -500,6 +500,7 @@ main .project-container .lalasweet-box .lalasweet-text-box p {
   font-weight: 400;
   text-align: right;
   color: var(--900-black);
+  font-family: var(--primary-font-ko);
 }
 
 main .project-container .lalasweet-box img {
@@ -531,6 +532,7 @@ main .project-container .vivienne-box .vivienne-text-box p {
   font-size: var(--project-size-xs);
   font-weight: 400;
   color: var(--900-black);
+  font-family: var(--primary-font-ko);
 }
 
 main .project-container .vivienne-box .vivienne-text-box h2 {
@@ -588,6 +590,7 @@ main .project-container .logitech-box .logitech-text-box p {
   font-weight: 400;
   text-align: right;
   color: var(--900-black);
+  font-family: var(--primary-font-ko);
 }
 
 main .project-container .logitech-box img {
@@ -619,6 +622,7 @@ main .project-container .everparking-box .everparking-text-box p {
   font-size: var(--project-size-xs);
   font-weight: 400;
   color: var(--900-black);
+  font-family: var(--primary-font-ko);
 }
 
 main .project-container .everparking-box .everparking-text-box h2 {
