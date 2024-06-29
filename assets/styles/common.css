@@ -56,15 +56,6 @@
   /* color */
   --bg-color-ivory: #FFFDF5;
 
-  /* --list-color1: #192551;
-  --list-color2: #37436A;
-  --list-color3: #47537D;
-  --list-color4: #F3EBDF;
-  --list-color5: #fff;
-  --list-color6: #000;
-  --point-color: #FF416E; */
-
-
   --color-red: #D56270;
   --color-yellow: #EFD07A;
   --color-lightgreen: #B3C2AB;
@@ -77,15 +68,15 @@
   --900-black: #000;
   --800-black: #111;
   --700-black: #333;
-  --600-black: #555;
+  --600-black: #444;
 
   /* 기타 */
   --primary-radius: 100px;
 
   /* 드래그 */
   ::selection {
-    background-color: #ad9dbd;
-    color: #fff;
+    background-color: var(--color-yellow);
+    color: var(--900-black);
   }
 
   /* 스크롤바 */
@@ -98,8 +89,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: var(--list-color2);
-      /* box-shadow: 0 1px 10px var(--list-color4); */
+    background-color: var(--color-green);
   }
 
   /* 공통 */
@@ -134,7 +124,7 @@
   }
 
   header .gnb-container .gnb-button {
-    background-color: var(--list-color2);
+    background-color: var(--color-green);
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -144,14 +134,14 @@
   }
 
   header .gnb-container .gnb-button:hover {
-    background-color: var(--list-color1);
+    background-color: var(--color-lightgreen);
   }
 
   header .gnb-container .gnb-button span {
     display: block;
     width: 45px;
     height: 4px;
-    background-color: var(--list-color5);
+    background-color: var(--color-white);
   }
 
   header .gnb-container .gnb-button .bar2 {
@@ -176,8 +166,8 @@
   }
 
   header .gnb-menu {
-    background-color: var(--list-color6);
-    color: var(--list-color5);
+    background-color: var(--800-black);
+    color: var(--color-white);
     width: 650px;
     height: 100vh;
     position: fixed;
@@ -199,7 +189,7 @@
 
   header .gnb-menu .gnb-desc {
     font-size: var(--desc-size-sx);
-    color: var(--list-color5);
+    color: var(--color-white);
     position: absolute;
     bottom: 70px;
     right: 50px;

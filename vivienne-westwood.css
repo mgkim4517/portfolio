@@ -55,14 +55,14 @@ main .main-container .main-wrapper h2 {
   line-height: 1;
   /* padding-top: 11px; */
   padding-bottom: 20px;
-  color: var(--list-color6);
+  color: var(--900-black);
 }
 
 main .main-container .main-wrapper h3 {
   font-size: var(--project-size-xl);
   font-weight: 400;
   padding-top: 29px;
-  color: var(--list-color6);
+  color: var(--900-black);
 }
 
 main .main-container .main-wrapper h3 span {
@@ -81,20 +81,21 @@ main .main-container .main-wrapper .main-tools {
 main .main-container .main-wrapper .main-tools li {
   font-size: var(--project-size-xs);
   font-weight: 400;
-  border: 2px solid var(--list-color3);
+  border: 2px solid var(--color-green);
   border-radius: 50px;
   padding: 10px 20px;
   text-align: center;
-  color: var(--list-color6);
+  color: var(--900-black);
 }
 
 main .main-container .main-wrapper .main-tools li:hover {
-  background-color: var(--list-color3);
+  background-color: var(--color-green);
+  color: var(--color-white);
 }
 
 /*** overview-container ***/
 main .overview-container {
-  background-color: var(--list-color4);
+  background-color: var(--color-beige);
   height: 215px;
   display: grid;
   grid-template-columns: 600px 820px;
@@ -105,7 +106,7 @@ main .overview-container h4 {
   font-size: var(--project-size-xxl);
   font-weight: 200;
   place-self: center;
-  color: var(--list-color6);
+  color: var(--900-black);
 }
 
 main .overview-container .overview-desc {
@@ -117,7 +118,7 @@ main .overview-container .overview-desc {
 main .overview-container .overview-desc li {
   font-size: var(--project-size-md);
   font-weight: 400;
-  color: var(--list-color6);
+  color: var(--900-black);
 }
 
 main .overview-container .overview-desc li span {
@@ -127,7 +128,7 @@ main .overview-container .overview-desc li span {
 }
 
 main .part-container {
-  background-color: var(--list-color4);
+  background-color: var(--color-beige);
   height: 250px;
   display: grid;
   grid-template-columns: 600px 820px;
@@ -140,7 +141,7 @@ main .part-container h4 {
   font-size: var(--project-size-xxl);
   font-weight: 200;
   place-self: center;
-  color: var(--list-color6);
+  color: var(--900-black);
 }
 
 main .part-container .part-box {
@@ -166,8 +167,8 @@ main .part-container .part-box .part-box2 li {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  background-color: var(--list-color5);
-  color: var(--list-color6);
+  background-color: var(--color-white);
+  color: var(--900-black);
 }
 
 main .part-container .part-box .part-box1 li:nth-child(1) {
@@ -188,7 +189,7 @@ main .part-container .part-box .part-box2 li:nth-child(2) {
 
 /*** review-container ***/
 main .review-container {
-  background-color: var(--list-color4);
+  background-color: var(--color-beige);
   height: 1230px;
   display: grid;
   grid-template-columns: 600px 820px;
@@ -201,7 +202,7 @@ main .review-container h3 {
   font-size: var(--project-size-xxl);
   font-weight: 200;
   place-self: center;
-  color: var(--list-color6);
+  color: var(--900-black);
 }
 
 main .review-container .review-wrapper {
@@ -287,14 +288,15 @@ footer .btn-box {
 
 footer .btn-box a {
   font-size: 32px;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--700-black);
+  color: var(--color-white);
   border-radius: 50px;
   width: 350px;
   height: 80px;
   line-height: 80px;
   text-align: center;
   display: inline-block;
+  margin-left: 40px;
 }
 
 footer .btn-box a:hover {
@@ -302,7 +304,7 @@ footer .btn-box a:hover {
 }
 
 footer .go-to-top img {
-  background-color: var(--list-color2);
+  background-color: var(--color-green);
   width: 60px; height: 60px;
   border-radius: 50%;
   padding: 10px;
@@ -311,5 +313,5 @@ footer .go-to-top img {
 }
 
 footer .go-to-top img:hover {
-  background-color: var(--list-color1);
+  background-color: var(--color-lightgreen);
 }

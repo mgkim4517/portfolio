@@ -469,7 +469,172 @@ main .project-container .project-box.show .title {
   transform: translateY(0);
 }
 
+/* project : lalasweet */
+main .project-container .lalasweet-box {
+  position: relative;
+}
 
+main .project-container .lalasweet-box h2 {
+  font-size: var(--title-size-lg);
+  color: var(--900-black);
+  font-weight: 900;
+  line-height: 0.7;
+  padding-top: 370px;
+}
+
+main .project-container .lalasweet-box .lalasweet-text-box {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+main .project-container .lalasweet-box .lalasweet-text-box h3 {
+  font-size: var(--title-size-xxl);
+  color: var(--900-black);
+  font-weight: 900;
+  line-height: 0.7;
+  padding-top: 69px;
+}
+
+main .project-container .lalasweet-box .lalasweet-text-box p {
+  font-size: var(--project-size-xs);
+  font-weight: 400;
+  text-align: right;
+  color: var(--900-black);
+}
+
+main .project-container .lalasweet-box img {
+  position: absolute;
+  top: 158px;
+  right: 286px;
+}
+
+/* project : viviennewood */
+main .project-container .vivienne-box {
+  position: relative;
+}
+
+main .project-container .vivienne-box h2 {
+  padding-top: 382px;
+  font-size: var(--title-size-xl);
+  font-weight: 900;
+  line-height: 0.7;
+  text-align: right;
+  color: var(--900-black);
+}
+
+main .project-container .vivienne-box .vivienne-text-box {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+main .project-container .vivienne-box .vivienne-text-box p {
+  font-size: var(--project-size-xs);
+  font-weight: 400;
+  color: var(--900-black);
+}
+
+main .project-container .vivienne-box .vivienne-text-box h2 {
+  font-size: var(--title-size-xl);
+  font-weight: 900;
+  line-height: 0.7;
+  text-align: right;
+  padding-top: 46px;
+  color: var(--900-black);
+}
+
+main .project-container .vivienne-box h3 {
+  font-size: var(--title-size-md);
+  font-weight: 900;
+  line-height: 0.7;
+  text-align: right;
+  padding-top: 46px;
+  color: var(--900-black);
+}
+
+main .project-container .vivienne-box img {
+  position: absolute;
+  top: 254px;
+  left: 286px;
+}
+
+/* project : logitech */
+main .project-container .logitech-box {
+  position: relative;
+}
+
+main .project-container .logitech-box h2 {
+  font-size: var(--title-size-xxl);
+  font-weight: 900;
+  line-height: 0.7;
+  padding-top: 406px;
+  color: var(--900-black);
+}
+
+main .project-container .logitech-box .logitech-text-box {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+main .project-container .logitech-box .logitech-text-box h2 {
+  font-size: var(--title-size-xxl);
+  font-weight: 900;
+  line-height: 0.7;
+  padding-top: 60px;
+  color: var(--900-black);
+}
+
+main .project-container .logitech-box .logitech-text-box p {
+  font-size: var(--project-size-xs);
+  font-weight: 400;
+  text-align: right;
+  color: var(--900-black);
+}
+
+main .project-container .logitech-box img {
+  position: absolute;
+  top: 232px;
+  right: 286px;
+}
+
+/* project : everparking */
+main .project-container .everparking-box {
+  position: relative;
+}
+
+main .project-container .everparking-box h2 {
+  font-size: var(--title-size-lg);
+  font-weight: 900;
+  line-height: 0.7;
+  padding-top: 501px;
+  text-align: right;
+  color: var(--900-black);
+}
+
+main .project-container .everparking-box .everparking-text-box {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+main .project-container .everparking-box .everparking-text-box p {
+  font-size: var(--project-size-xs);
+  font-weight: 400;
+  color: var(--900-black);
+}
+
+main .project-container .everparking-box .everparking-text-box h2 {
+  font-size: var(--title-size-lg);
+  font-weight: 900;
+  line-height: 0.7;
+  padding-top: 72px;
+  text-align: right;
+  color: var(--900-black);
+}
+
+main .project-container .everparking-box img {
+  position: absolute;
+  top: 213px;
+  left: 286px;
+}
 
 /***** footer *****/
 /* footer .contact-container h3 {

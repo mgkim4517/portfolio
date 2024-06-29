@@ -80,7 +80,7 @@ main .main-container .main-wrapper .main-tools {
 main .main-container .main-wrapper .main-tools li {
   font-size: var(--project-size-xs);
   font-weight: 400;
-  border: 2px solid var(--list-color3);
+  border: 2px solid var(--color-green);
   border-radius: 50px;
   height: 45px;
   text-align: center;
@@ -88,12 +88,13 @@ main .main-container .main-wrapper .main-tools li {
 }
 
 main .main-container .main-wrapper .main-tools li:hover {
-  background-color: var(--list-color3);
+  background-color: var(--color-green);
+  color: var(--color-white);
 }
 
 /*** situation-container ***/
 main .situation-container {
-  background-color: var(--list-color4);
+  background-color: var(--color-beige);
   width: 1420px;
   height: 191px;
   display: grid;
@@ -126,7 +127,7 @@ main .situation-container .situation-desc li span {
 
 /*** task-container ***/
 main .task-container {
-  background-color: var(--list-color4);
+  background-color: var(--color-beige);
   width: 1420px;
   height: 236px;
   display: grid;
@@ -160,7 +161,7 @@ main .task-container .task-desc li span {
 
 /*** style-container ***/
 main .style-container {
-  background-color: var(--list-color4);
+  background-color: var(--color-beige);
   width: 1420px;
   height: 1050px;
   display: grid;
@@ -193,7 +194,7 @@ main .style-container .style-wrapper .keyword-wrapper .keyword-box {
 }
 
 main .style-container .style-wrapper .keyword-wrapper .keyword-box li {
-  background-color: var(--list-color5);
+  background-color: var(--color-white);
   border-radius: 50px;
   width: 150px;
   height: 50px;
@@ -232,22 +233,22 @@ main .style-container .style-wrapper .color-wrapper .color-box li {
 
 main .style-container .style-wrapper .color-wrapper .color-box li:nth-child(1) {
   background-color: #000;
-  color: var(--list-color5);
+  color: var(--color-white);
 }
 
 main .style-container .style-wrapper .color-wrapper .color-box li:nth-child(2) {
   background-color: #808080;
-  color: var(--list-color5);
+  color: var(--color-white);
 }
 
 main .style-container .style-wrapper .color-wrapper .color-box li:nth-child(3) {
   background-color: #fff;
-  color: var(--color-list6);
+  color: var(--900-black);
 }
 
 main .style-container .style-wrapper .color-wrapper .color-box li:nth-child(4) {
   background-color: #4682B4;
-  color: var(--list-color5);
+  color: var(--color-white);
 }
 
 main .style-container .style-wrapper .color-wrapper .color-desc {
@@ -334,7 +335,7 @@ main .style-container .style-wrapper .fonts-wrapper .fonts-box .font-info .S-Cor
 
 /*** issue-container ***/
 main .issue-container {
-  background-color: var(--list-color4);
+  background-color: var(--color-beige);
   width: 1420px;
   height: 720px;
   display: grid;
@@ -400,7 +401,7 @@ main .issue-container .issue-wrapper .issue-desc2 img {
 
 /*** review-container ***/
 main .review-container {
-  background-color: var(--list-color4);
+  background-color: var(--color-beige);
   width: 1420px;
   height: 1020px;
   display: grid;
@@ -497,7 +498,7 @@ footer .btn-box {
 
 footer .btn-box a {
   font-size: 32px;
-  background-color: #333;
+  background-color: var(--700-black);
   color: #fff;
   border-radius: 50px;
   width: 350px;
@@ -505,6 +506,7 @@ footer .btn-box a {
   line-height: 80px;
   text-align: center;
   display: inline-block;
+  margin-left: 40px;
 }
 
 footer .btn-box a:hover {
@@ -512,7 +514,7 @@ footer .btn-box a:hover {
 }
 
 footer .go-to-top img {
-  background-color: var(--list-color2);
+  background-color: var(--color-lightgreen);
   width: 60px; height: 60px;
   border-radius: 50%;
   padding: 10px;
@@ -521,5 +523,5 @@ footer .go-to-top img {
 }
 
 footer .go-to-top img:hover {
-  background-color: var(--list-color1);
+  background-color: var(--color-green);
 }
