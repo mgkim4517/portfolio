@@ -1,3 +1,22 @@
+## 240629
+* project section 수정된 디자인 퍼블리싱
+
+## 240628
+* vivienne-westwood 상세 페이지 내용 작성
+* vivienne-westwood 상세 페이지 html 완성
+* vivienne-westwood 상세 페이지 css 완성
+* project section 디자인 수정 (logitech, lalasweet 추가)
+* 포트폴리오 전체적인 컬러 변경
+
+## 240627
+* logitech 상세 페이지 내용 완성
+* logitech 상세 페이지 html 완성
+* logitech 상세 페이지 css 완성
+* vivienne-westwood 완료 보고서 내용 수정
+
+## 240626
+* logitech 상세 페이지 내용 작성
+
 ## 240620
 * everparking 완료 보고서 내용 수정
 
