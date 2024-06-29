@@ -334,7 +334,7 @@ main .about-container .about-wrapper .about-box .intro-box .intro-tag-box li a f
   display: none;
 }
 
-@keyframes rotate_image{
+@keyframes rotate_image {
   from {
     transform: translate(-50%, -50%) rotate(0deg);
   }
