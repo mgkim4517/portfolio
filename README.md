@@ -1,3 +1,32 @@
+## Design Guide
+```
+1. KEYWORD
+#심플한 #모던한 #개성있는
+
+2. COLOR
+#FFFDF5, #F3EBDF, #77AF80, #B3C2AB
+- 베이지와 채도 낮은 초록색을 사용하여 시각적으로 편안한 느낌을 주었습니다.
+
+3. FONT
+- 한글 폰트 : 프리텐다드
+- 영문 폰트 : Monserrat
+- 포인트 영문 폰트 : 창원단감아삭체
+```
+
+## Publishing Guide
+```
+1. 통일된 식별자명을 위해 케밥 표기법 사용
+ex) main-container
+
+2. 주석
+/***** header, main, footer *****/, <!-- ***** header, main, footer ***** -->
+/*** section ***/, <!-- *** section *** -->
+/* 그 외 */, <!-- * 그 외 * -->
+
+3. class명 표기법
+container > wrapper > content > box
+```
+# PORTFOLIO 작업 일지
 ## 240629
 * project section 수정된 디자인 퍼블리싱
 
