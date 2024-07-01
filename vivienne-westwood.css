@@ -33,8 +33,15 @@ main .main-container {
 }
 
 main .main-container .video {
-  width: 100%;
-  background-color: #ddd;
+  width: 750px;
+  height: 650px;
+  overflow: hidden;
+  text-align: right;
+  padding-right: 100px;
+}
+
+main .main-container .video video {
+  height: 140%;
 }
 
 main .main-container .main-wrapper {
@@ -187,6 +194,11 @@ main .part-container .part-box .part-box2 li:nth-child(2) {
   width: 400px;
 }
 
+main .part-container .part-box .part-box1 li:hover,
+main .part-container .part-box .part-box2 li:hover {
+  background-color: var(--color-lightgreen);
+}
+
 /*** review-container ***/
 main .review-container {
   background-color: var(--color-beige);
@@ -269,6 +281,10 @@ main .review-container .review-wrapper .learned-box p {
 main .review-container .review-wrapper .learned-box .learned-desc1,
 main .review-container .review-wrapper .learned-box .learned-desc2 {
   padding: 25px 0 25px 30px;
+}
+
+main .review-container .review-wrapper .learned-box .learned-desc2 {
+  padding-top: 0;
 }
 
 main .review-container .review-wrapper .learned-box p span {

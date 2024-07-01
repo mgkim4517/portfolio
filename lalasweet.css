@@ -33,8 +33,15 @@ main .main-container {
 }
 
 main .main-container .video {
-  width: 100%;
-  background-color: #ddd;
+  width: 750px;
+  height: 650px;
+  overflow: hidden;
+  text-align: right;
+  padding-right: 100px;
+}
+
+main .main-container .video video {
+  height: 140%;
 }
 
 main .main-container .main-wrapper {

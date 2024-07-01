@@ -155,6 +155,10 @@ main .part-container .part-box li {
   color: var(--900-black);
 }
 
+main .part-container .part-box li:hover {
+  background-color: var(--color-lightgreen);
+}
+
 /*** review-container ***/
 main .review-container {
   background-color: var(--color-beige);
