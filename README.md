@@ -30,6 +30,9 @@ container > wrapper > content > box
 ## 240629
 * project section 수정된 디자인 퍼블리싱
 
+## 240701
+* 프로젝트 상세 페이지 결과물 동영상 추가
+
 ## 240628
 * vivienne-westwood 상세 페이지 내용 작성
 * vivienne-westwood 상세 페이지 html 완성
