@@ -4,6 +4,8 @@ body {
   font-family: var(--primary-font-en1);
   white-space: nowrap;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /***** header *****/
