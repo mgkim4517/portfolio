@@ -27,11 +27,11 @@ ex) main-container
 container > wrapper > content > box
 ```
 # PORTFOLIO 작업 일지
-## 240629
-* project section 수정된 디자인 퍼블리싱
-
 ## 240701
 * 프로젝트 상세 페이지 결과물 동영상 추가
+
+## 240629
+* project section 수정된 디자인 퍼블리싱
 
 ## 240628
 * vivienne-westwood 상세 페이지 내용 작성
