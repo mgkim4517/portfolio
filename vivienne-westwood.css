@@ -36,12 +36,12 @@ main .main-container .video {
   width: 750px;
   height: 650px;
   overflow: hidden;
-  text-align: right;
-  padding-right: 100px;
+  text-align: center;
+  background-color: #374b3f;
 }
 
 main .main-container .video video {
-  height: 140%;
+  height: 100%;
 }
 
 main .main-container .main-wrapper {
